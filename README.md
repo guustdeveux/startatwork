@@ -1,12 +1,9 @@
-START@WORK v0.8
+START@WORK v0.9 - NorthBridge Office Group
 
-Open index.html in je browser of publiceer via GitHub Pages.
-
-Nieuw in v0.8:
-- Visuele redesign met rustigere hero, duidelijkere navigatiehiërarchie en missiekaarten.
-- Elke missie volgt hetzelfde stramien: doel, theorie, voorbeeld, oefening, checklist, eindopdracht, download.
-- Smartschool- en Outlooksimulatoren ogen meer als echte formulieren.
-- NBN Lab bevat concrete voorbeelden: datum, tijd, bedrag, telefoon, gsm, IBAN/BIC en marges.
-- Downloads zijn herwerkt als duidelijke downloadkaarten.
-- START@WORK cursus v0.8 toegevoegd.
-- BrightOffice Solutions behouden als fictieve werkomgeving.
+Nieuw in v0.9:
+- BrightOffice Solutions vervangen door NorthBridge Office Group.
+- NorthBridge krijgt een eigen logo, slogan en bedrijfsidentiteit.
+- Nieuwe werkplekpagina met rol, afdelingen, collega’s en documentenstroom.
+- Downloadbaar NorthBridge-bedrijfsdossier toegevoegd.
+- Doorlopende verhaallijn versterkt: leerling werkt als junior administratief medewerker.
+- Klaar voor verdere uitbouw naar dashboard/werkdag/XP in v9.x.

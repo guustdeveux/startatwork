@@ -19,3 +19,21 @@ main{min-width:0}.topbar{height:66px;background:rgba(255,255,255,.86);backdrop-f
 .nbn-hero.calm{background:linear-gradient(105deg,#fff 0%,#fff 62%,#edf8f7 100%);border:1px solid var(--line);border-radius:28px;box-shadow:var(--shadow);padding:44px;margin-bottom:24px}.nbn-title-row{display:flex;gap:28px;align-items:center}.nbn-title-row img{width:150px;height:150px;object-fit:contain}.example-grid>div{background:#f8fbfe;border:1px solid var(--line);border-radius:14px;padding:16px}.example-grid b{color:#062444}.download-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.download-cards.big{grid-template-columns:repeat(3,1fr)}.download-cards a{display:grid;grid-template-columns:1fr auto;gap:8px;text-decoration:none;color:var(--text);background:#f8fbfe;border:1px solid var(--line);border-radius:15px;padding:18px}.download-cards strong{font-size:1.1rem}.download-cards small{display:block;color:var(--muted);margin-top:5px}.download-cards b{background:var(--blue);color:white;padding:9px 12px;border-radius:999px;align-self:center}
 .pdf-card.inline iframe{width:100%;height:78vh;min-height:680px;border:1px solid var(--line);border-radius:14px;background:white}.flowline{display:flex;gap:11px;flex-wrap:wrap;align-items:center;padding:24px}.flowline span{background:#f8fbfe;border:1px solid var(--line);border-radius:12px;padding:13px;font-weight:900}.flowline b{color:var(--blue)}.goals{display:grid;gap:14px}.goal{padding:20px}.goal code{background:#f8fbfe;padding:5px 8px;border-radius:8px;font-weight:900}.goal ul{margin-bottom:0}
 @media(max-width:1180px){body{grid-template-columns:1fr}.sidebar{position:relative;height:auto}.topbar{display:none}.screen{padding:16px}.dashboard-hero.clean,.mission-overview,.attitude-grid,.two-col,.example-grid,.download-cards,.download-cards.big{grid-template-columns:1fr}.lesson-hero.smart,.lesson-hero.outlook{display:block}.lesson-hero img{max-width:260px;width:100%;margin-bottom:18px}.do-dont{grid-template-columns:1fr}.nbn-title-row{display:block}.nbn-title-row img{width:130px;height:130px}.pdf-card.inline iframe{height:70vh;min-height:520px}}
+
+.notfound{display:block;background:#f7fafc;color:#092346;padding:40px;font-family:Inter,system-ui,sans-serif}
+.nf-card{max-width:720px;margin:60px auto;background:white;border:1px solid #dbe4ee;border-radius:20px;padding:32px;box-shadow:0 18px 50px rgba(7,28,54,.07)}
+
+.northbridge-logo{width:220px;max-width:100%;height:auto;object-fit:contain;background:white;border-radius:18px;padding:10px}
+.northbridge-hero{display:flex;gap:32px;align-items:center;background:linear-gradient(105deg,#fff 0%,#fff 62%,#effbf9 100%)}
+.northbridge-hero img{width:260px;max-width:34%;height:auto;object-fit:contain;background:white;border-radius:18px}
+.department-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.department-grid div{background:#f8fbfe;border:1px solid var(--line);border-radius:16px;padding:18px}
+.department-grid b{font-size:1.1rem;color:var(--navy)}
+.department-grid p{color:var(--muted);margin-bottom:0}
+.people-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.people-grid div{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow)}
+.people-grid span{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--navy),var(--teal));color:white;font-weight:1000;margin-bottom:12px}
+.people-grid b{display:block}
+.people-grid small{display:block;color:var(--teal);font-weight:900;margin:4px 0 8px}
+.people-grid p{color:var(--muted);margin:0}
+@media(max-width:1180px){.northbridge-hero{display:block}.northbridge-hero img{max-width:280px;width:100%;margin-bottom:18px}.department-grid,.people-grid{grid-template-columns:1fr}}
