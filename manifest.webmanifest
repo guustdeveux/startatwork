@@ -1,0 +1,16 @@
+{
+  "name": "START@WORK Module 1",
+  "short_name": "START@WORK",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f8fb",
+  "theme_color": "#0b2a4a",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "128x128",
+      "type": "image/svg+xml"
+    }
+  ]
+}
