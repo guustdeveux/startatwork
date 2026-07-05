@@ -1,9 +1,12 @@
 {
-  "release": "v10.2 Module 3 MENUFIX",
+  "release": "v10.2-smartschool-refinements",
   "status": "OK",
   "missing": [],
   "content_checks": {
-    "m3_nav": true,
-    "m3_sections": true
+    "nbn_fixed_button": true,
+    "no_simulator_section": true,
+    "no_smartschool_download_section": true,
+    "pdf_iframe": true,
+    "beste": true
   }
 }

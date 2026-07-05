@@ -135,3 +135,50 @@ if(smLabBtn){
     result.style.color = score === questions.length ? '#16a34a' : '#dc2626';
   });
 }
+
+/* FINAL FIX: NBN MCQ button */
+const nbnFixedBtn = document.querySelector('#checkNbnMcqFixed');
+if(nbnFixedBtn){
+  nbnFixedBtn.addEventListener('click', () => {
+    const questions = [...document.querySelectorAll('#m2-lab .nbn-mcq')];
+    let score = 0;
+    questions.forEach(q => {
+      q.classList.remove('correct','wrong');
+      const checked = q.querySelector('input:checked');
+      if(checked && checked.value.trim() === q.dataset.correct.trim()){
+        score++;
+        q.classList.add('correct');
+      } else {
+        q.classList.add('wrong');
+      }
+    });
+    const result = document.querySelector('#nbnMcqResultFixed');
+    result.textContent = `Score: ${score}/${questions.length}. ${score === questions.length ? 'Uitstekend: je past de NBN-afspraken correct toe.' : 'Bekijk de rood gemarkeerde vragen opnieuw.'}`;
+    result.style.color = score === questions.length ? '#16a34a' : '#dc2626';
+  });
+}
+
+/* FINAL FIX: Smartschool + Planner MCQs in same style */
+function checkMcqGroup(selector, resultSelector){
+  const questions = [...document.querySelectorAll(selector)];
+  let score = 0;
+  questions.forEach(q => {
+    q.classList.remove('correct','wrong');
+    const checked = q.querySelector('input:checked');
+    if(checked && checked.value.trim() === q.dataset.correct.trim()){
+      score++;
+      q.classList.add('correct');
+    } else {
+      q.classList.add('wrong');
+    }
+  });
+  const result = document.querySelector(resultSelector);
+  if(result){
+    result.textContent = `Score: ${score}/${questions.length}. ${score === questions.length ? 'Prima: je kiest professioneel.' : 'Bekijk de rode vragen opnieuw.'}`;
+    result.style.color = score === questions.length ? '#16a34a' : '#dc2626';
+  }
+}
+const smartschoolLabFinalBtn = document.querySelector('#checkSmartschoolLab');
+if(smartschoolLabFinalBtn){
+  smartschoolLabFinalBtn.addEventListener('click', () => checkMcqGroup('#m3-lab .smartschool-mcq', '#smartschoolLabResult'));
+}

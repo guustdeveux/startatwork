@@ -1,14 +1,14 @@
-START@WORK v10.2 - Module 3 Smartschool
+START@WORK v10.2 Smartschool refinements
 
-Inbegrepen:
-- Fix NBN-lab Module 2: antwoorden staan onder elkaar en score werkt correct.
-- Module 3 Smartschool toegevoegd.
-- Geen Agenda: overal Planner gebruikt.
-- Smartschool-simulator.
-- Bijlagen/uploadzone.
-- Planner-opvolging.
-- Smartschool-lab.
-- Eindopdracht met concreet stappenplan.
-- YouTube-video's ingebed voor berichten en uploadzone.
-
-Upload de inhoud van deze map naar de root van GitHub.
+Aangepast:
+- NBN-lab knop werkt met nieuwe unieke handler.
+- NBN-lab antwoorden onder elkaar.
+- Groter iframe voor Smartschool-video.
+- Iframe toegevoegd met NBN-samenvatting.
+- Smartschool berichtstructuur gebruikt Beste i.p.v. Geachte.
+- Simulator verwijderd.
+- Bestandsnaamstructuur toegevoegd: JJJJMMDD_VoornaamNaam_Bestandsnaam.
+- Planner mini-oefening omgezet naar meerkeuzevragen.
+- Smartschool Lab in NBN Lab-stijl.
+- Eindopdracht: leerlingen typen bericht in Smartschool zelf en sturen naar leraar.
+- Downloadcentrum Smartschool verwijderd.
