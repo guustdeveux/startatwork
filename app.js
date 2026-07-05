@@ -182,3 +182,49 @@ const smartschoolLabFinalBtn = document.querySelector('#checkSmartschoolLab');
 if(smartschoolLabFinalBtn){
   smartschoolLabFinalBtn.addEventListener('click', () => checkMcqGroup('#m3-lab .smartschool-mcq', '#smartschoolLabResult'));
 }
+
+/* Module 4 downloads */
+const MODULE4_DOWNLOADS = [
+  {title:'Samenvatting documentenstroom', desc:'Basisvolgorde en belang van documentenstroom.', file:'downloads/module4/module4_documentenstroom_samenvatting.pdf'},
+  {title:'Documentenkaart', desc:'Functie van offerte, bestelling, pakbon, factuur en creditnota.', file:'downloads/module4/module4_documentenkaart.pdf'},
+  {title:'Checklist documentenstroom', desc:'Controlekaart voor de eindopdracht.', file:'downloads/module4/module4_checklist.pdf'}
+];
+const module4Grid = document.querySelector('#module4DownloadGrid');
+if(module4Grid){
+  module4Grid.innerHTML = MODULE4_DOWNLOADS.map(d => `<article class="download-card"><h2>${d.title}</h2><p>${d.desc}</p><a href="${d.file}" download>Download</a></article>`).join('');
+}
+/* ERP simulation */
+const genDocs = document.querySelector('#generateDocs');
+if(genDocs){
+  genDocs.addEventListener('click', () => {
+    const customer = document.querySelector('#erpCustomer').value || 'Klant';
+    const article = document.querySelector('#erpArticle').value || 'Artikel';
+    const qty = document.querySelector('#erpQty').value || '0';
+    const price = document.querySelector('#erpPrice').value || '0,00';
+    const result = document.querySelector('#erpResult');
+    result.classList.add('show');
+    result.innerHTML = `<h3>Documenten gegenereerd</h3>
+      <p>✓ Offerte voor ${customer}</p>
+      <p>✓ Bestelling: ${qty} × ${article}</p>
+      <p>✓ Orderbevestiging met prijs ${price} per stuk</p>
+      <p>✓ Pakbon voor logistiek</p>
+      <p>✓ Factuur voor boekhouding</p>`;
+  });
+}
+/* Document flow lab */
+const docFlowBtn = document.querySelector('#checkDocFlowLab');
+if(docFlowBtn){
+  docFlowBtn.addEventListener('click', () => {
+    const questions = [...document.querySelectorAll('#m4-lab .smartschool-mcq')];
+    let score = 0;
+    questions.forEach(q => {
+      q.classList.remove('correct','wrong');
+      const checked = q.querySelector('input:checked');
+      if(checked && checked.value.trim() === q.dataset.correct.trim()){ score++; q.classList.add('correct'); }
+      else q.classList.add('wrong');
+    });
+    const result = document.querySelector('#docFlowLabResult');
+    result.textContent = `Score: ${score}/${questions.length}. ${score === questions.length ? 'Prima: je begrijpt de documentenstroom.' : 'Bekijk de rode vragen opnieuw.'}`;
+    result.style.color = score === questions.length ? '#16a34a' : '#dc2626';
+  });
+}

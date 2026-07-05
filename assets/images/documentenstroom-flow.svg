@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 420">
+<rect width="1100" height="420" rx="34" fill="#eef8f7"/>
+<g font-family="Arial" font-weight="800" font-size="20" fill="#0b2a4a">
+<rect x="45" y="155" width="120" height="80" rx="18" fill="#fff" stroke="#dbe4ee" stroke-width="4"/><text x="73" y="203">Offerte</text>
+<rect x="195" y="155" width="125" height="80" rx="18" fill="#fff" stroke="#dbe4ee" stroke-width="4"/><text x="217" y="203">Bestelling</text>
+<rect x="350" y="155" width="175" height="80" rx="18" fill="#fff" stroke="#dbe4ee" stroke-width="4"/><text x="371" y="203">Orderbevestiging</text>
+<rect x="555" y="155" width="120" height="80" rx="18" fill="#fff" stroke="#dbe4ee" stroke-width="4"/><text x="586" y="203">Pakbon</text>
+<rect x="705" y="155" width="130" height="80" rx="18" fill="#fff" stroke="#dbe4ee" stroke-width="4"/><text x="736" y="203">Levering</text>
+<rect x="865" y="155" width="120" height="80" rx="18" fill="#fff" stroke="#dbe4ee" stroke-width="4"/><text x="894" y="203">Factuur</text>
+</g>
+<g stroke="#39b8b2" stroke-width="7" stroke-linecap="round">
+<path d="M170 195 H190"/><path d="M325 195 H345"/><path d="M530 195 H550"/><path d="M680 195 H700"/><path d="M840 195 H860"/>
+</g>
+<text x="45" y="88" font-family="Arial" font-size="34" font-weight="800" fill="#0b2a4a">Van aanvraag tot betaling</text>
+</svg>

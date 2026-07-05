@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520">
+<rect width="900" height="520" rx="38" fill="#f8fbfe"/>
+<rect x="70" y="70" width="210" height="380" rx="24" fill="#0b2a4a"/>
+<text x="105" y="120" font-family="Arial" font-size="28" font-weight="800" fill="#fff">NorthBridge</text>
+<rect x="105" y="160" width="130" height="24" rx="12" fill="#39b8b2"/>
+<rect x="105" y="210" width="115" height="20" rx="10" fill="#c7d9e8"/>
+<rect x="105" y="255" width="145" height="20" rx="10" fill="#c7d9e8"/>
+<rect x="320" y="70" width="510" height="380" rx="24" fill="#fff" stroke="#dbe4ee" stroke-width="4"/>
+<text x="365" y="125" font-family="Arial" font-size="30" font-weight="800" fill="#0b2a4a">Nieuwe bestelling</text>
+<rect x="365" y="170" width="360" height="34" rx="12" fill="#eef8f7"/>
+<rect x="365" y="230" width="260" height="34" rx="12" fill="#eef8f7"/>
+<rect x="365" y="290" width="310" height="34" rx="12" fill="#eef8f7"/>
+<rect x="365" y="360" width="170" height="48" rx="24" fill="#0067c5"/>
+<text x="400" y="392" font-family="Arial" font-size="22" font-weight="800" fill="#fff">Verwerken</text>
+</svg>

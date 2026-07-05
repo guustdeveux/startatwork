@@ -1,14 +1,11 @@
-START@WORK v10.2 Smartschool refinements
+START@WORK v10.3 - Module 4 Documentenstroom
 
-Aangepast:
-- NBN-lab knop werkt met nieuwe unieke handler.
-- NBN-lab antwoorden onder elkaar.
-- Groter iframe voor Smartschool-video.
-- Iframe toegevoegd met NBN-samenvatting.
-- Smartschool berichtstructuur gebruikt Beste i.p.v. Geachte.
-- Simulator verwijderd.
-- Bestandsnaamstructuur toegevoegd: JJJJMMDD_VoornaamNaam_Bestandsnaam.
-- Planner mini-oefening omgezet naar meerkeuzevragen.
-- Smartschool Lab in NBN Lab-stijl.
-- Eindopdracht: leerlingen typen bericht in Smartschool zelf en sturen naar leraar.
-- Downloadcentrum Smartschool verwijderd.
+Toegevoegd:
+- BookWidgets-iframe bij NBN-normen.
+- Module 4 Documentenstroom.
+- Theorie rond documentenstroom.
+- Volgorde van offerte tot betaling.
+- Documentfuncties en afdelingen.
+- NorthBridge ERP-simulatie.
+- Documentenstroom-lab.
+- Eindopdracht en downloads.

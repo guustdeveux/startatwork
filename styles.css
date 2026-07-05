@@ -72,3 +72,15 @@
 .nbn-style-mcq.correct{border-color:var(--green);box-shadow:0 0 0 3px rgba(22,163,74,.12)}
 .nbn-style-mcq.wrong{border-color:var(--red);box-shadow:0 0 0 3px rgba(220,38,38,.12)}
 @media(max-width:1100px){.video-card iframe{min-height:320px}.pdf-viewer-card iframe{height:560px}}
+
+.bookwidget-card{background:#fff7ed;border:1px solid var(--line);border-radius:18px;padding:22px;margin:24px 0;border-top:6px solid var(--orange)}
+.bookwidget-card iframe{width:100%;height:760px;border:0;border-radius:16px;background:white}
+.module4-direct-card{margin-top:26px}
+.doc-function-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:24px 0}
+.doc-function-grid article,.erp-sim{background:#f8fbfe;border:1px solid var(--line);border-radius:18px;padding:22px}
+.erp-sim{display:grid;gap:14px}
+.erp-sim label{display:grid;gap:8px;font-weight:900}
+.erp-sim input{border:1px solid var(--line);border-radius:14px;padding:13px;font:inherit}
+.erp-result{background:white;border:1px solid var(--line);border-radius:16px;padding:18px;display:none}
+.erp-result.show{display:block}
+@media(max-width:1100px){.doc-function-grid{grid-template-columns:1fr}.bookwidget-card iframe{height:560px}}
