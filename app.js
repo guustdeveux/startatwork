@@ -61,3 +61,77 @@ if(nbnMcqButton){
     result.style.color = score === questions.length ? '#16a34a' : '#dc2626';
   });
 }
+
+
+/* Fixed NBN MCQ handler */
+const nbnMcqBtn2 = document.querySelector('#checkNbnMcq');
+if(nbnMcqBtn2){
+  nbnMcqBtn2.addEventListener('click', () => {
+    const questions = [...document.querySelectorAll('.nbn-mcq')];
+    let score = 0;
+    questions.forEach(q => {
+      q.classList.remove('correct','wrong');
+      const correct = q.dataset.correct;
+      const checked = q.querySelector('input:checked');
+      if(checked && checked.value === correct){
+        score++;
+        q.classList.add('correct');
+      } else {
+        q.classList.add('wrong');
+      }
+    });
+    const result = document.querySelector('#nbnMcqResult');
+    result.textContent = `Score: ${score}/${questions.length}. ${score === questions.length ? 'Uitstekend: je past de NBN-afspraken correct toe.' : 'Bekijk de rood gemarkeerde vragen opnieuw.'}`;
+    result.style.color = score === questions.length ? '#16a34a' : '#dc2626';
+  });
+}
+
+/* Module 3 downloads */
+const MODULE3_DOWNLOADS = [
+  {title:'Smartschool samenvatting', desc:'Vaste structuur voor berichten en uploadzones.', file:'downloads/module3/module3_smartschool_samenvatting.pdf'},
+  {title:'Smartschool checklist', desc:'Controlekaart voor berichten, Planner en uploadzone.', file:'downloads/module3/module3_smartschool_checklist.pdf'}
+];
+const module3Grid = document.querySelector('#module3DownloadGrid');
+if(module3Grid){
+  module3Grid.innerHTML = MODULE3_DOWNLOADS.map(d => `<article class="download-card"><h2>${d.title}</h2><p>${d.desc}</p><a href="${d.file}" download>Download</a></article>`).join('');
+}
+
+/* Smartschool message checker */
+const ssCheck = document.querySelector('#checkSmartschoolMessage');
+if(ssCheck){
+  ssCheck.addEventListener('click', () => {
+    const subject = document.querySelector('#ssSubject').value.trim();
+    const body = document.querySelector('#ssBody').value.trim();
+    let tips = [];
+    if(subject.length < 8) tips.push('Maak je onderwerp concreter.');
+    if(!body.includes('Geachte')) tips.push('Gebruik een correcte begroeting.');
+    if(!body.includes('Met vriendelijke groet')) tips.push('Sluit af met Met vriendelijke groet.');
+    if(!body.includes('4 Organisatie') && !body.includes('Logistiek')) tips.push('Vermeld je klas in de handtekening.');
+    const feedback = document.querySelector('#ssFeedback');
+    if(tips.length === 0){
+      feedback.textContent = 'Sterk bericht: de basisstructuur is aanwezig.';
+      feedback.style.color = '#16a34a';
+    } else {
+      feedback.textContent = 'Nog verbeteren: ' + tips.join(' ');
+      feedback.style.color = '#dc2626';
+    }
+  });
+}
+
+/* Smartschool lab */
+const smLabBtn = document.querySelector('#checkSmartschoolLab');
+if(smLabBtn){
+  smLabBtn.addEventListener('click', () => {
+    const questions = [...document.querySelectorAll('.smartschool-mcq')];
+    let score = 0;
+    questions.forEach(q => {
+      q.classList.remove('correct','wrong');
+      const checked = q.querySelector('input:checked');
+      if(checked && checked.value === q.dataset.correct){ score++; q.classList.add('correct'); }
+      else q.classList.add('wrong');
+    });
+    const result = document.querySelector('#smartschoolLabResult');
+    result.textContent = `Score: ${score}/${questions.length}. ${score === questions.length ? 'Prima: je kiest professioneel.' : 'Bekijk de rode vragen opnieuw.'}`;
+    result.style.color = score === questions.length ? '#16a34a' : '#dc2626';
+  });
+}

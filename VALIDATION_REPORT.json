@@ -1,5 +1,9 @@
 {
-  "release": "v10.1-module2-update-b",
+  "release": "v10.2 Module 3 MENUFIX",
   "status": "OK",
-  "missing": []
+  "missing": [],
+  "content_checks": {
+    "m3_nav": true,
+    "m3_sections": true
+  }
 }

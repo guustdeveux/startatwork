@@ -39,6 +39,16 @@
       <button class="nav" data-section="m2-final"><span>21</span> Eindopdracht</button>
       <button class="nav" data-section="m2-word-task"><span>22</span> Word-opdracht</button>
       <button class="nav" data-section="m2-downloads"><span>23</span> Downloads NBN</button>
+
+      <button class="nav module-sep" data-section="m3-start"><span>24</span> Module 3: Smartschool</button>
+      <button class="nav" data-section="m3-why"><span>25</span> Waarom Smartschool?</button>
+      <button class="nav" data-section="m3-structure"><span>26</span> Berichtstructuur</button>
+      <button class="nav" data-section="m3-simulator"><span>27</span> Simulator</button>
+      <button class="nav" data-section="m3-attachments"><span>28</span> Bijlagen & uploadzone</button>
+      <button class="nav" data-section="m3-planner"><span>29</span> Planner</button>
+      <button class="nav" data-section="m3-lab"><span>30</span> Smartschool-lab</button>
+      <button class="nav" data-section="m3-final"><span>31</span> Eindopdracht</button>
+      <button class="nav" data-section="m3-downloads"><span>32</span> Downloads Smartschool</button>
     </nav>
     <div class="progress-card"><small>Voortgang module 1</small><div class="progress"><div id="progressBar"></div></div><strong id="progressText">0%</strong></div>
   </aside>
@@ -62,12 +72,28 @@
         <article class="stat-card"><span>🎯</span><h3>Doel</h3><p>Je begrijpt wat professioneel werken betekent.</p></article>
       </div>
       <article class="message-card"><div class="person">SJ</div><div><h2>Sarah Jacobs - Office Manager</h2><p>Welkom bij NorthBridge Office Group. Vandaag start je als junior administratief medewerker. Voor je aan je eerste taak begint, wil ik duidelijk maken welke professionele houding wij verwachten. Kennis is belangrijk, maar collega's moeten vooral op jou kunnen rekenen.</p></div></article>
-    <article class="message-card module2-teaser">
+    <article class="message-card module3-teaser">
+        <div class="person">SS</div>
+        <div>
+          <h2>Nieuwe module: Smartschool professioneel gebruiken</h2>
+          <p>Je past de NBN-afspraken nu toe in Smartschool: duidelijke onderwerpen, professionele berichten, correcte bijlagen, Planner opvolgen en uploadzones gebruiken.</p>
+          <button class="primary" data-section="m3-start">Open Module 3</button>
+        </div>
+      </article>
+      <article class="message-card module2-teaser">
         <div class="person">NBN</div>
         <div>
           <h2>Volgende module: NBN-richtlijnen</h2>
           <p>Leer hoe professionele documenten worden opgebouwd met duidelijke afspraken over marges, witregels, datums, bedragen, telefoonnummers en begroetingen.</p>
           <button class="primary" data-section="m2-start">Open Module 2</button>
+        </div>
+      </article>
+    <article class="message-card module3-direct-card">
+        <div class="person">SS</div>
+        <div>
+          <h2>Module 3: Smartschool</h2>
+          <p>Ga rechtstreeks naar de Smartschoolmodule: berichten, Planner, uploadzone en eindopdracht.</p>
+          <button class="primary" data-section="m3-start">Open Module 3</button>
         </div>
       </article>
     </section>
@@ -231,52 +257,54 @@
     </article></section>
 
     <section id="m2-lab" class="section"><article class="lesson">
-      <p class="eyebrow">NBN-lab</p><h1>Oefen met meerkeuzevragen.</h1>
-      <p>Lees elke vraag aandachtig en duid het correcte antwoord aan. Nadien controleer je je score. Bij sommige vragen lijken meerdere antwoorden op elkaar: let dus op spaties, komma's, hoofdletters en leestekens.</p>
+      <p class="eyebrow">NBN-lab</p><h1>Oefen met duidelijke meerkeuzevragen.</h1>
+      <p>Lees elke vraag aandachtig en duid telkens één correct antwoord aan. Let op spaties, komma's, hoofdletters en leestekens.</p>
       <img class="wide-img" src="assets/images/nbn-lab.svg" alt="NBN lab">
 
-      <div class="nbn-mcq" data-correct="20 juli 2009">
-        <h2>1. Welke datumnotatie is correct?</h2>
-        <label><input type="radio" name="q1" value="20/07/09"> 20/07/09</label>
-        <label><input type="radio" name="q1" value="20 juli 2009"> 20 juli 2009</label>
-        <label><input type="radio" name="q1" value="20-07-2009"> 20-07-2009</label>
-        <label><input type="radio" name="q1" value="20 JULI 2009"> 20 JULI 2009</label>
+      <div class="nbn-quiz">
+        <div class="nbn-mcq" data-correct="20 juli 2009">
+          <h2>1. Welke datumnotatie is correct?</h2>
+          <label><input type="radio" name="q1" value="20/07/09"> <span>20/07/09</span></label>
+          <label><input type="radio" name="q1" value="20 juli 2009"> <span>20 juli 2009</span></label>
+          <label><input type="radio" name="q1" value="20-07-2009"> <span>20-07-2009</span></label>
+          <label><input type="radio" name="q1" value="20 JULI 2009"> <span>20 JULI 2009</span></label>
+        </div>
+
+        <div class="nbn-mcq" data-correct="€ 123,45">
+          <h2>2. Welke bedragnotatie is correct?</h2>
+          <label><input type="radio" name="q2" value="€123.45"> <span>€123.45</span></label>
+          <label><input type="radio" name="q2" value="€ 123,45"> <span>€ 123,45</span></label>
+          <label><input type="radio" name="q2" value="123.45 euro"> <span>123.45 euro</span></label>
+          <label><input type="radio" name="q2" value="€123,45"> <span>€123,45</span></label>
+        </div>
+
+        <div class="nbn-mcq" data-correct="gsm 0478 90 14 15">
+          <h2>3. Welke gsm-notatie is correct?</h2>
+          <label><input type="radio" name="q3" value="0478901415"> <span>0478901415</span></label>
+          <label><input type="radio" name="q3" value="0478/90.14.15"> <span>0478/90.14.15</span></label>
+          <label><input type="radio" name="q3" value="gsm 0478 90 14 15"> <span>gsm 0478 90 14 15</span></label>
+          <label><input type="radio" name="q3" value="GSM: 0478-90-14-15"> <span>GSM: 0478-90-14-15</span></label>
+        </div>
+
+        <div class="nbn-mcq" data-correct="Geachte mevrouw">
+          <h2>4. Welke begroeting is correct?</h2>
+          <label><input type="radio" name="q4" value="Geachte mevrouw,"> <span>Geachte mevrouw,</span></label>
+          <label><input type="radio" name="q4" value="Geachte mevrouw"> <span>Geachte mevrouw</span></label>
+          <label><input type="radio" name="q4" value="Geachte mevrouw."> <span>Geachte mevrouw.</span></label>
+          <label><input type="radio" name="q4" value="Beste mevrouw,"> <span>Beste mevrouw,</span></label>
+        </div>
+
+        <div class="nbn-mcq" data-correct="3500 HASSELT">
+          <h2>5. Welke woonplaatsnotatie is correct?</h2>
+          <label><input type="radio" name="q5" value="3500 Hasselt"> <span>3500 Hasselt</span></label>
+          <label><input type="radio" name="q5" value="3500 HASSELT"> <span>3500 HASSELT</span></label>
+          <label><input type="radio" name="q5" value="B-3500 Hasselt"> <span>B-3500 Hasselt</span></label>
+          <label><input type="radio" name="q5" value="Hasselt 3500"> <span>Hasselt 3500</span></label>
+        </div>
       </div>
 
-      <div class="nbn-mcq" data-correct="€ 123,45">
-        <h2>2. Welke bedragnotatie is correct?</h2>
-        <label><input type="radio" name="q2" value="€123.45"> €123.45</label>
-        <label><input type="radio" name="q2" value="€ 123,45"> € 123,45</label>
-        <label><input type="radio" name="q2" value="123.45 euro"> 123.45 euro</label>
-        <label><input type="radio" name="q2" value="€123,45"> €123,45</label>
-      </div>
-
-      <div class="nbn-mcq" data-correct="gsm 0478 90 14 15">
-        <h2>3. Welke gsm-notatie is correct?</h2>
-        <label><input type="radio" name="q3" value="0478901415"> 0478901415</label>
-        <label><input type="radio" name="q3" value="0478/90.14.15"> 0478/90.14.15</label>
-        <label><input type="radio" name="q3" value="gsm 0478 90 14 15"> gsm 0478 90 14 15</label>
-        <label><input type="radio" name="q3" value="GSM: 0478-90-14-15"> GSM: 0478-90-14-15</label>
-      </div>
-
-      <div class="nbn-mcq" data-correct="Geachte mevrouw">
-        <h2>4. Welke begroeting is correct?</h2>
-        <label><input type="radio" name="q4" value="Geachte mevrouw,"> Geachte mevrouw,</label>
-        <label><input type="radio" name="q4" value="Geachte mevrouw"> Geachte mevrouw</label>
-        <label><input type="radio" name="q4" value="Geachte mevrouw."> Geachte mevrouw.</label>
-        <label><input type="radio" name="q4" value="Beste mevrouw,"> Beste mevrouw,</label>
-      </div>
-
-      <div class="nbn-mcq" data-correct="3500 HASSELT">
-        <h2>5. Welke woonplaatsnotatie is correct?</h2>
-        <label><input type="radio" name="q5" value="3500 Hasselt"> 3500 Hasselt</label>
-        <label><input type="radio" name="q5" value="3500 HASSELT"> 3500 HASSELT</label>
-        <label><input type="radio" name="q5" value="B-3500 Hasselt"> B-3500 Hasselt</label>
-        <label><input type="radio" name="q5" value="Hasselt 3500"> Hasselt 3500</label>
-      </div>
-
-      <button class="primary" id="checkNbnLab">Controleer mijn antwoorden</button>
-      <p id="nbnLabResult" class="feedback"></p>
+      <button class="primary" id="checkNbnMcq">Controleer mijn antwoorden</button>
+      <p id="nbnMcqResult" class="feedback"></p>
     </article></section>
 
     <section id="m2-final" class="section"><article class="lesson">
@@ -392,6 +420,162 @@
     <section id="m2-downloads" class="section"><article class="lesson">
       <p class="eyebrow">Downloads</p><h1>Downloadcentrum Module 2</h1>
       <div id="module2DownloadGrid" class="download-grid"></div>
+    </article></section>
+
+
+    <section id="m3-start" class="section">
+      <div class="hero smartschool-hero">
+        <div>
+          <p class="eyebrow">Module 3</p>
+          <h1>Smartschool professioneel gebruiken.</h1>
+          <p class="lead">Smartschool is het hoofdcommunicatiemiddel op school. Je leert berichten professioneel opstellen, de Planner opvolgen, bijlagen correct toevoegen en opdrachten indienen via de uploadzone.</p>
+          <div class="hero-actions">
+            <button class="primary" data-section="m3-why">Start module 3</button>
+            <a class="secondary" href="downloads/module3/module3_smartschool_samenvatting.pdf" download>Download samenvatting</a>
+          </div>
+        </div>
+        <div class="smartschool-device">
+          <div class="ss-top"><span>S</span><strong>Smartschool</strong></div>
+          <div class="ss-list"><p>Nieuw bericht</p><p>Planner</p><p>Uploadzone</p><p>Opdrachten</p></div>
+        </div>
+      </div>
+      <article class="message-card">
+        <div class="person">SJ</div>
+        <div>
+          <h2>Sarah Jacobs - Office Manager</h2>
+          <p>In een professionele omgeving controleer je digitale communicatie elke dag. Op Campus Hast is Smartschool de plaats waar opdrachten, berichten en de Planner samenkomen. Wie Smartschool niet opvolgt, mist afspraken en deadlines.</p>
+        </div>
+      </article>
+    </section>
+
+    <section id="m3-why" class="section"><article class="lesson">
+      <p class="eyebrow">Waarom Smartschool?</p><h1>Smartschool is geen extra kanaal, maar je digitale werkplek op school.</h1>
+      <p>Smartschool wordt gebruikt voor berichten, documenten, uploadzones, opdrachten en de Planner. Daarom moet je het platform dagelijks controleren. Een gemist Smartschoolbericht kan betekenen dat je een deadline, wijziging of belangrijke instructie mist.</p>
+      <div class="info-row">
+        <div class="info-box employer"><h3>Werkvloer</h3><p>Op stage of werk verwacht men dat je digitale communicatie opvolgt. Wie berichten niet leest of deadlines mist, toont onvoldoende betrouwbaarheid.</p></div>
+        <div class="info-box school"><h3>Campus Hast</h3><p>Controleer Smartschool en de Planner elke schooldag. Noteer opdrachten, kijk naar uploadzones en reageer tijdig wanneer er een probleem is.</p></div>
+      </div>
+      <div class="video-card">
+        <h2>Video: berichten sturen in Smartschool</h2>
+        <p>Bekijk de video wanneer je nog niet zeker bent hoe je een bericht stuurt of een bijlage toevoegt.</p>
+        <iframe src="https://www.youtube.com/embed/IN74M9VEq50" title="Berichten sturen in Smartschool" allowfullscreen></iframe>
+      </div>
+    </article></section>
+
+    <section id="m3-structure" class="section"><article class="lesson">
+      <p class="eyebrow">Berichtstructuur</p><h1>Een professioneel Smartschoolbericht heeft een vaste opbouw.</h1>
+      <p>Een goed bericht is kort, duidelijk en beleefd. De ontvanger moet onmiddellijk begrijpen waarover je bericht gaat, wat er gebeurd is en wat je vraag is.</p>
+      <div class="steps">
+        <div><span>1</span><h3>Onderwerp</h3><p>Kort en concreet. Niet: “vraag”. Wel: “Vraag over uploadzone brief NBN”.</p></div>
+        <div><span>2</span><h3>Begroeting</h3><p>Bijvoorbeeld: Geachte mevrouw. Geen leesteken na de begroeting.</p></div>
+        <div><span>3</span><h3>Kern</h3><p>Leg kort uit wat er aan de hand is en wat je al probeerde.</p></div>
+        <div><span>4</span><h3>Slot</h3><p>Sluit af met Met vriendelijke groet, je naam en je klas.</p></div>
+      </div>
+      <div class="message-example good">
+        <h3>Goed voorbeeld</h3>
+        <p><strong>Onderwerp:</strong> Vraag over uploadzone brief NBN</p>
+        <p>Geachte mevrouw</p>
+        <p>Ik heb mijn brief volgens de NBN-richtlijnen opgesteld en opgeslagen in OneDrive. Ik vind de uploadzone echter niet terug.</p>
+        <p>Kan u mij laten weten waar ik de opdracht moet indienen?</p>
+        <p>Met vriendelijke groet<br>Voornaam Achternaam<br>4 Organisatie & Logistiek</p>
+      </div>
+      <div class="message-example bad">
+        <h3>Slecht voorbeeld</h3>
+        <p>hey<br>waar moet ik dit zetten???</p>
+      </div>
+    </article></section>
+
+    <section id="m3-simulator" class="section"><article class="lesson">
+      <p class="eyebrow">Simulator</p><h1>Schrijf zelf een Smartschoolbericht.</h1>
+      <p>Vul het formulier in. De simulator controleert of je bericht een onderwerp, begroeting, kern en handtekening bevat.</p>
+      <div class="smartschool-sim">
+        <div class="sim-sidebar"><strong>Smartschool</strong><button>Berichten</button><button>Planner</button><button>Uploadzone</button></div>
+        <div class="sim-compose">
+          <label>Aan <input id="ssTo" value="Mevrouw Jacobs"></label>
+          <label>Onderwerp <input id="ssSubject" placeholder="Vraag over uploadzone brief NBN"></label>
+          <label>Bericht <textarea id="ssBody" rows="10" placeholder="Geachte mevrouw&#10;&#10;...&#10;&#10;Met vriendelijke groet&#10;Voornaam Achternaam&#10;4 Organisatie & Logistiek"></textarea></label>
+          <button class="primary" id="checkSmartschoolMessage">Controleer bericht</button>
+          <p id="ssFeedback" class="feedback"></p>
+        </div>
+      </div>
+    </article></section>
+
+    <section id="m3-attachments" class="section"><article class="lesson">
+      <p class="eyebrow">Bijlagen en uploadzone</p><h1>Een bestand indienen is ook professioneel handelen.</h1>
+      <p>Een correcte bijlage heeft een duidelijke bestandsnaam en wordt via de juiste uploadzone ingediend. Upload nooit zomaar een foto van een document wanneer een Word- of pdf-bestand gevraagd wordt.</p>
+      <div class="steps-list">
+        <article><span>1</span><h3>Bestandsnaam controleren</h3><p>Gebruik de afgesproken structuur, bijvoorbeeld: 20260705_GuustDeveux_BriefNBNNormen.docx.</p></article>
+        <article><span>2</span><h3>Uploadzone openen</h3><p>Ga naar de uploadzone die de leerkracht op het bord noteert.</p></article>
+        <article><span>3</span><h3>Bestand toevoegen</h3><p>Kies het bestand uit OneDrive en controleer of het juiste document klaarstaat.</p></article>
+        <article><span>4</span><h3>Indienen</h3><p>Klik pas op indienen wanneer je zeker bent dat de juiste versie gekozen is.</p></article>
+      </div>
+      <div class="video-card">
+        <h2>Video: uploadzone in Smartschool</h2>
+        <p>Bekijk deze video als je wil zien hoe een uploadzone werkt.</p>
+        <iframe src="https://www.youtube.com/embed/8b1SZeFzJ-M" title="Uploadzone Smartschool" allowfullscreen></iframe>
+      </div>
+    </article></section>
+
+    <section id="m3-planner" class="section"><article class="lesson">
+      <p class="eyebrow">Planner</p><h1>De Planner is je dagelijkse controlepunt.</h1>
+      <p>Bij ons spreken we over de <strong>Planner</strong>, niet over de Agenda. In de Planner vind je afspraken, taken, deadlines en opdrachten. Controleer deze elke schooldag.</p>
+      <div class="timeline">
+        <div><b>Start van de dag</b><p>Open Smartschool en controleer de Planner.</p></div>
+        <div><b>Tijdens de les</b><p>Noteer nieuwe opdrachten of controleer de deadline.</p></div>
+        <div><b>Thuis</b><p>Kijk welke taken je nog moet afwerken.</p></div>
+        <div><b>Voor de deadline</b><p>Controleer of je alles correct hebt ingediend.</p></div>
+      </div>
+      <div class="task-card">
+        <h2>Mini-oefening</h2>
+        <p>Je ziet in de Planner dat de brief NBN morgen om 16.00 uur moet worden ingediend. Wat doe je vandaag?</p>
+        <textarea placeholder="Ik controleer..."></textarea>
+      </div>
+    </article></section>
+
+    <section id="m3-lab" class="section"><article class="lesson">
+      <p class="eyebrow">Smartschool-lab</p><h1>Kies de meest professionele optie.</h1>
+      <div class="smartschool-mcq" data-correct="Vraag over uploadzone brief NBN">
+        <h2>1. Welke onderwerpregel is het best?</h2>
+        <label><input type="radio" name="smq1" value="Vraag"> Vraag</label>
+        <label><input type="radio" name="smq1" value="Help"> Help</label>
+        <label><input type="radio" name="smq1" value="Vraag over uploadzone brief NBN"> Vraag over uploadzone brief NBN</label>
+      </div>
+      <div class="smartschool-mcq" data-correct="Geachte mevrouw">
+        <h2>2. Welke begroeting is correct?</h2>
+        <label><input type="radio" name="smq2" value="Hey"> Hey</label>
+        <label><input type="radio" name="smq2" value="Geachte mevrouw"> Geachte mevrouw</label>
+        <label><input type="radio" name="smq2" value="Geachte mevrouw,"> Geachte mevrouw,</label>
+      </div>
+      <div class="smartschool-mcq" data-correct="Ik heb het bestand opnieuw opgeslagen als pdf, maar uploaden lukt nog niet.">
+        <h2>3. Welke kernzin is het meest duidelijk?</h2>
+        <label><input type="radio" name="smq3" value="Het lukt niet."> Het lukt niet.</label>
+        <label><input type="radio" name="smq3" value="Ik heb het bestand opnieuw opgeslagen als pdf, maar uploaden lukt nog niet."> Ik heb het bestand opnieuw opgeslagen als pdf, maar uploaden lukt nog niet.</label>
+        <label><input type="radio" name="smq3" value="Wat nu???"> Wat nu???</label>
+      </div>
+      <button class="primary" id="checkSmartschoolLab">Controleer mijn antwoorden</button>
+      <p id="smartschoolLabResult" class="feedback"></p>
+    </article></section>
+
+    <section id="m3-final" class="section"><article class="lesson">
+      <p class="eyebrow">Eindopdracht</p><h1>Dien je brief professioneel in via Smartschool.</h1>
+      <p>Je gebruikt de brief uit Module 2. Je schrijft een Smartschoolbericht aan de leraar en vermeldt dat je de brief als bijlage toevoegt of via de uploadzone indient.</p>
+      <div class="steps-list">
+        <article><span>1</span><h3>Controleer je bestand</h3><p>Staat het document in OneDrive > Organisatie en Project? Heeft het de juiste bestandsnaam?</p></article>
+        <article><span>2</span><h3>Open Smartschool</h3><p>Ga naar het juiste vak en kijk naar de uploadzone die de leerkracht op het bord noteert.</p></article>
+        <article><span>3</span><h3>Schrijf een bericht</h3><p>Gebruik een duidelijk onderwerp, begroeting, kern, slot en handtekening.</p></article>
+        <article><span>4</span><h3>Voeg toe of upload</h3><p>Voeg je document toe of upload het in de juiste uploadzone.</p></article>
+        <article><span>5</span><h3>Controleer</h3><p>Controleer of het juiste bestand zichtbaar is.</p></article>
+        <article><span>6</span><h3>Dien in</h3><p>Klik op indienen en controleer of je een bevestiging ziet.</p></article>
+      </div>
+      <div class="task-card">
+        <h2>Bericht dat je opstelt</h2>
+        <textarea placeholder="Onderwerp: Indienen brief NBN-richtlijnen&#10;&#10;Geachte mevrouw&#10;&#10;...&#10;&#10;Met vriendelijke groet&#10;Voornaam Achternaam&#10;4 Organisatie & Logistiek"></textarea>
+      </div>
+    </article></section>
+
+    <section id="m3-downloads" class="section"><article class="lesson">
+      <p class="eyebrow">Downloads</p><h1>Downloadcentrum Module 3</h1>
+      <div id="module3DownloadGrid" class="download-grid"></div>
     </article></section>
 
   </main>
