@@ -282,3 +282,27 @@ document.addEventListener('click', function(e){
   target.classList.add('active');
   document.querySelectorAll('.nav').forEach(n => n.classList.toggle('active', n.getAttribute('data-section') === targetId));
 });
+
+/* Module 4 reboot x-ray buttons */
+document.querySelectorAll('.xray-notes button').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const box = btn.closest('.xray-notes').querySelector('.xray-feedback');
+    box.textContent = btn.dataset.tip || 'Dit onderdeel helpt om het document correct te lezen.';
+  });
+});
+const purchaseLabBtn = document.querySelector('#checkPurchaseLab');
+if(purchaseLabBtn){
+  purchaseLabBtn.addEventListener('click', () => {
+    const questions = [...document.querySelectorAll('#m4-lab-new .smartschool-mcq')];
+    let score = 0;
+    questions.forEach(q => {
+      q.classList.remove('correct','wrong');
+      const checked = q.querySelector('input:checked');
+      if(checked && checked.value.trim() === q.dataset.correct.trim()){ score++; q.classList.add('correct'); }
+      else q.classList.add('wrong');
+    });
+    const result = document.querySelector('#purchaseLabResult');
+    result.textContent = `Score: ${score}/${questions.length}. ${score === questions.length ? 'Sterk: je begrijpt het aankoopproces.' : 'Bekijk de rode vragen opnieuw en vergelijk met de theorie.'}`;
+    result.style.color = score === questions.length ? '#16a34a' : '#dc2626';
+  });
+}

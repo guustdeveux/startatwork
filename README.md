@@ -1,9 +1,13 @@
-START@WORK v10.4 - Module 4 uitgebreid: aankoopproces
+START@WORK v10.5 - Module 4 volledig herbouwd
 
-Gebaseerd op de aangeleverde PowerPoint rond koopproces/aankoopproces, de herhalingsoefening en de woordzoeker.
+Module 4 is opnieuw opgebouwd als "Mijn eerste aankoopproces" voor instromers.
 Toegevoegd:
-- Uitgebreide uitleg aankoopproces.
-- Koper/verkoper-stappen: prijsaanvraag, offerte, bestelbon, orderbevestiging, leveringsbon, factuur.
-- Extra begrippen: handelskorting, financiële korting, vervaldag, franco huis, af fabriek, creditnota.
-- Interactieve woordzoeker op basis van de PDF-woordzoeker.
-- Uitgebreid documentenstroom-lab en eindopdracht.
+- één doorlopende casus rond 12 ergonomische bureaustoelen;
+- duidelijke uitleg per document;
+- interactieve X-ray-documenten;
+- offertevergelijking;
+- orderbevestiging met fout;
+- leveringsbon en factuur volledig ontleed;
+- creditnota bij fout;
+- documentenstroom pas na alle documenten;
+- concrete eindopdracht.

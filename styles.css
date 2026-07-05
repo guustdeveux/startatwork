@@ -100,3 +100,18 @@
 .bookwidget-card{position:relative;z-index:1;overflow:hidden}
 .bookwidget-card iframe{display:block;width:100%;height:760px;border:0;border-radius:16px;background:white}
 main > .section{position:relative}
+
+/* Module 4 reboot */
+.xray-layout{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;margin:24px 0}
+.document-mock{background:white;border:1px solid var(--line);border-radius:20px;padding:30px;box-shadow:var(--shadow);font-family:Arial,sans-serif;line-height:1.55}
+.doc-head{font-size:1.35rem;font-weight:900;color:var(--navy);border-bottom:3px solid var(--teal);padding-bottom:12px;margin-bottom:12px}
+.doc-meta{color:var(--muted);font-weight:800;margin:10px 0}
+.doc-title{font-weight:900;font-size:1.15rem;background:#eef8f7;border-radius:12px;padding:12px;margin:14px 0}
+.xray-notes{background:#f8fbfe;border:1px solid var(--line);border-radius:18px;padding:22px}
+.xray-notes button{display:block;width:100%;border:1px solid var(--line);background:white;border-radius:14px;padding:12px 14px;margin:10px 0;text-align:left;font-weight:900;cursor:pointer}
+.xray-feedback{background:white;border:1px solid var(--line);border-radius:14px;padding:14px;font-weight:850}
+.offer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:24px 0}
+.offer-card{background:#f8fbfe;border:1px solid var(--line);border-radius:18px;padding:22px}
+.offer-card.best{border-top:7px solid var(--green);background:#f0fdf4}
+.module4-direct-card{margin-top:26px}
+@media(max-width:1100px){.xray-layout,.offer-grid{grid-template-columns:1fr}}
