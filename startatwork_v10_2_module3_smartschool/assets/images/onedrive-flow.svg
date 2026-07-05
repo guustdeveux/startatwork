@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360">
+<rect width="800" height="360" rx="34" fill="#eef8f7"/>
+<rect x="70" y="120" width="170" height="110" rx="18" fill="#fff" stroke="#dbe4ee" stroke-width="4"/>
+<rect x="315" y="120" width="170" height="110" rx="18" fill="#fff" stroke="#dbe4ee" stroke-width="4"/>
+<rect x="560" y="120" width="170" height="110" rx="18" fill="#fff" stroke="#dbe4ee" stroke-width="4"/>
+<text x="105" y="180" font-family="Arial" font-size="24" font-weight="800" fill="#0b2a4a">OneDrive</text>
+<text x="331" y="170" font-family="Arial" font-size="20" font-weight="800" fill="#0b2a4a">Organisatie</text>
+<text x="351" y="196" font-family="Arial" font-size="20" font-weight="800" fill="#0b2a4a">en Project</text>
+<text x="600" y="180" font-family="Arial" font-size="22" font-weight="800" fill="#0b2a4a">Opslaan</text>
+<path d="M255 175 H300" stroke="#39b8b2" stroke-width="8" stroke-linecap="round"/><path d="M500 175 H545" stroke="#39b8b2" stroke-width="8" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,22 @@
+{
+  "version": "v10.0-module1",
+  "school": "Hast Katholiek Onderwijs Hasselt",
+  "company": "NorthBridge Office Group",
+  "downloads": [
+    {
+      "title": "Samenvatting module 1",
+      "desc": "Kern van professionele attitude, Planner, deadlines en waarden/normen.",
+      "file": "downloads/module1_professioneel_werken_samenvatting.pdf"
+    },
+    {
+      "title": "Attitudechecklist",
+      "desc": "Controlekaart voor leerlingen.",
+      "file": "downloads/module1_attitude_checklist.pdf"
+    },
+    {
+      "title": "Reflectieblad",
+      "desc": "Reflectie na de eerste module.",
+      "file": "downloads/module1_reflectieblad.pdf"
+    }
+  ]
+}
