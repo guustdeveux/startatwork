@@ -1,11 +1,9 @@
-START@WORK v10.3 - Module 4 Documentenstroom
+START@WORK v10.4 - Module 4 uitgebreid: aankoopproces
 
+Gebaseerd op de aangeleverde PowerPoint rond koopproces/aankoopproces, de herhalingsoefening en de woordzoeker.
 Toegevoegd:
-- BookWidgets-iframe bij NBN-normen.
-- Module 4 Documentenstroom.
-- Theorie rond documentenstroom.
-- Volgorde van offerte tot betaling.
-- Documentfuncties en afdelingen.
-- NorthBridge ERP-simulatie.
-- Documentenstroom-lab.
-- Eindopdracht en downloads.
+- Uitgebreide uitleg aankoopproces.
+- Koper/verkoper-stappen: prijsaanvraag, offerte, bestelbon, orderbevestiging, leveringsbon, factuur.
+- Extra begrippen: handelskorting, financiële korting, vervaldag, franco huis, af fabriek, creditnota.
+- Interactieve woordzoeker op basis van de PDF-woordzoeker.
+- Uitgebreid documentenstroom-lab en eindopdracht.

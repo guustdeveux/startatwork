@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520">
+<rect width="1200" height="520" rx="42" fill="#eef8f7"/>
+<text x="70" y="74" font-family="Arial" font-size="38" font-weight="800" fill="#0b2a4a">Aankoopproces: koper en verkoper</text>
+<g font-family="Arial" font-weight="800">
+  <rect x="70" y="125" width="175" height="290" rx="28" fill="#0b2a4a"/>
+  <text x="122" y="285" font-size="32" fill="#fff">Koper</text>
+  <rect x="955" y="125" width="175" height="290" rx="28" fill="#0b2a4a"/>
+  <text x="992" y="285" font-size="32" fill="#fff">Verkoper</text>
+</g>
+<g font-family="Arial" font-size="21" font-weight="800" fill="#0b2a4a">
+  <rect x="340" y="115" width="250" height="54" rx="18" fill="#fff" stroke="#39b8b2" stroke-width="4"/>
+  <text x="372" y="150">1. Prijsaanvraag</text>
+  <rect x="610" y="185" width="250" height="54" rx="18" fill="#fff" stroke="#39b8b2" stroke-width="4"/>
+  <text x="655" y="220">2. Offerte</text>
+  <rect x="340" y="255" width="250" height="54" rx="18" fill="#fff" stroke="#39b8b2" stroke-width="4"/>
+  <text x="382" y="290">3. Bestelbon</text>
+  <rect x="610" y="325" width="250" height="54" rx="18" fill="#fff" stroke="#39b8b2" stroke-width="4"/>
+  <text x="632" y="360">4. Orderbevestiging</text>
+  <rect x="610" y="395" width="250" height="54" rx="18" fill="#fff" stroke="#39b8b2" stroke-width="4"/>
+  <text x="648" y="430">5. Leveringsbon</text>
+  <rect x="610" y="465" width="250" height="40" rx="16" fill="#fff" stroke="#39b8b2" stroke-width="4"/>
+  <text x="685" y="493">6. Factuur</text>
+</g>
+<g stroke="#0067c5" stroke-width="7" stroke-linecap="round" marker-end="url(#arrow)">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#0067c5"/></marker></defs>
+<path d="M245 150 H330"/>
+<path d="M860 212 H945"/>
+<path d="M245 282 H330"/>
+<path d="M860 352 H945"/>
+<path d="M860 422 H945"/>
+<path d="M860 486 H945"/>
+</g>
+</svg>

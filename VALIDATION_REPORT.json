@@ -1,10 +1,22 @@
 {
-  "release": "v10.3-module4-documentenstroom",
+  "release": "v10.4-module4-aankoopproces-iframefix",
   "status": "OK",
-  "missing": [],
   "checks": {
-    "bookwidgets": true,
-    "m4_nav": true,
-    "m4_sections": true
+    "m2-why": true,
+    "m2-layout": true,
+    "m2-notation": true,
+    "m2-examples": true,
+    "m2-lab": true,
+    "m2-word-task": true,
+    "m3-start": true,
+    "m3-why": true,
+    "m3-final": true,
+    "m4-start": true,
+    "m4-purchase": true,
+    "m4-wordsearch": true,
+    "m4-final": true,
+    "m2_what_no_nested_sections": true,
+    "bookwidget_once": true,
+    "bookwidget_inside_m2": true
   }
 }

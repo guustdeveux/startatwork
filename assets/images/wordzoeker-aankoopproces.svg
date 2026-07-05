@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520">
+<rect width="900" height="520" rx="38" fill="#fff7ed"/>
+<text x="70" y="80" font-family="Arial" font-size="40" font-weight="800" fill="#0b2a4a">Interactieve woordzoeker</text>
+<rect x="70" y="120" width="760" height="320" rx="24" fill="#fff" stroke="#dbe4ee" stroke-width="4"/>
+<text x="120" y="200" font-family="Arial" font-size="34" font-weight="800" fill="#39b8b2">Aankoopproces</text>
+<text x="120" y="255" font-family="Arial" font-size="24" font-weight="700" fill="#0b2a4a">Zoek woorden zoals offerte, bestelbon, factuur, creditnota en leveringsbon.</text>
+<circle cx="680" cy="255" r="70" fill="#39b8b2"/>
+<text x="680" y="268" text-anchor="middle" font-family="Arial" font-size="44" font-weight="900" fill="#fff">ABC</text>
+</svg>

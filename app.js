@@ -228,3 +228,57 @@ if(docFlowBtn){
     result.style.color = score === questions.length ? '#16a34a' : '#dc2626';
   });
 }
+
+/* Module 4 wordsearch */
+const WORDSEARCH_WORDS = [
+  'Prijsaanvraag','Offerte','Bestelbon','Orderbevestiging','Leveringsbon','Factuur','Creditnota',
+  'Handelskorting','Financiële korting','Goederen','Verpakking','Vervaldag','Franco huis','Af fabriek'
+];
+const WORDSEARCH_GRID = [
+  'AANKOOPPROCES',
+  'OFFERTENOTA',
+  'BESTELBONABC',
+  'FACTUURKOPER',
+  'VERKOPERSXYZ',
+  'LEVERINGSBON',
+  'CREDITNOTAQQ',
+  'GOEDERENLMNO',
+  'VERPAKKINGAB',
+  'VERVALDAGCDE',
+  'FRANCOHUISFG',
+  'AFFABRIEKHIJ',
+  'KORTINGENKLM',
+  'ORDERBEVESTG'
+];
+const gridEl = document.querySelector('#wordsearchGrid');
+const listEl = document.querySelector('#wordList');
+if(gridEl && listEl){
+  gridEl.innerHTML = WORDSEARCH_GRID.join('').split('').map(ch => `<div class="wordsearch-cell">${ch}</div>`).join('');
+  listEl.innerHTML = WORDSEARCH_WORDS.map(w => `<button class="word-btn" data-word="${w}">${w}</button>`).join('');
+  listEl.querySelectorAll('.word-btn').forEach(btn => {
+    btn.addEventListener('click', () => btn.classList.toggle('found'));
+  });
+}
+const wordBtn = document.querySelector('#checkWordsearch');
+if(wordBtn){
+  wordBtn.addEventListener('click', () => {
+    const found = document.querySelectorAll('.word-btn.found').length;
+    const total = document.querySelectorAll('.word-btn').length;
+    const result = document.querySelector('#wordsearchResult');
+    result.textContent = `Je hebt ${found}/${total} begrippen aangeduid. ${found === total ? 'Sterk: alle begrippen gevonden.' : 'Zoek nog verder in het rooster.'}`;
+    result.style.color = found === total ? '#16a34a' : '#0067c5';
+  });
+}
+
+
+/* IFRAMEFIX_STRICT_NAV: force clean navigation between sections */
+document.addEventListener('click', function(e){
+  const btn = e.target.closest('.nav[data-section], button[data-section]');
+  if(!btn) return;
+  const targetId = btn.getAttribute('data-section');
+  const target = document.getElementById(targetId);
+  if(!target) return;
+  document.querySelectorAll('main > .section').forEach(sec => sec.classList.remove('active'));
+  target.classList.add('active');
+  document.querySelectorAll('.nav').forEach(n => n.classList.toggle('active', n.getAttribute('data-section') === targetId));
+});
