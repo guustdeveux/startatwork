@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 120">
+  <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#0B2A4A"/><stop offset="1" stop-color="#39B8B2"/></linearGradient></defs>
+  <rect width="360" height="120" rx="28" fill="#fff"/>
+  <path d="M42 76 L84 34 L126 76" fill="none" stroke="url(#g)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M54 76 H114" stroke="#0B2A4A" stroke-width="12" stroke-linecap="round"/>
+  <text x="150" y="58" font-family="Arial, sans-serif" font-size="30" font-weight="800" fill="#0B2A4A">NorthBridge</text>
+  <text x="151" y="84" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#39B8B2">Office Group</text>
+</svg>

@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>START@WORK Platform</title>
+  <meta name="description" content="START@WORK - digitaal leerplatform voor 4 Organisatie & Logistiek">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <aside class="workspace-nav">
+    <div class="app-brand">
+      <div class="mark">S@W</div>
+      <div><strong>START<span>@</span>WORK</strong><small>Hast Katholiek Onderwijs Hasselt</small></div>
+    </div>
+
+    <div class="company-card">
+      <img src="assets/logos/northbridge-logo.svg" alt="NorthBridge Office Group">
+      <p>Waar professionele groei begint.</p>
+    </div>
+
+    <nav class="nav-section">
+      <p>Werkplek</p>
+      <button class="nav active" data-view="dashboard"><span>⌂</span> Dashboard</button>
+      <button class="nav" data-view="workday"><span>☑</span> Mijn werkdag</button>
+      <button class="nav" data-view="apps"><span>▦</span> Applicaties</button>
+      <button class="nav" data-view="files"><span>▤</span> Bestanden</button>
+      <button class="nav" data-view="progress"><span>★</span> Voortgang</button>
+    </nav>
+
+    <nav class="nav-section">
+      <p>Missies</p>
+      <button class="nav" data-view="attitude"><span>01</span> Professioneel werken</button>
+      <button class="nav" data-view="smartschool"><span>02</span> Smartschool</button>
+      <button class="nav" data-view="outlook"><span>03</span> Outlook</button>
+      <button class="nav" data-view="nbn"><span>04</span> NBN Lab</button>
+      <button class="nav" data-view="letter"><span>05</span> Zakelijke brief</button>
+      <button class="nav" data-view="documents"><span>06</span> Documentenstroom</button>
+    </nav>
+
+    <nav class="nav-section">
+      <p>Leerkracht</p>
+      <button class="nav" data-view="goals"><span>◎</span> Leerplandoelen</button>
+      <button class="nav" data-view="downloads"><span>⇩</span> Downloads</button>
+    </nav>
+  </aside>
+
+  <main class="workspace">
+    <header class="topbar">
+      <div class="crumb" id="crumb">Dashboard</div>
+      <div class="top-meta">
+        <span class="pill">Junior administratief medewerker</span>
+        <button id="themeToggle">Donkere modus</button>
+      </div>
+    </header>
+
+    <section class="view active" id="dashboard">
+      <div class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">NorthBridge Office Group</p>
+          <h1>Goedemorgen. Je werkdag start nu.</h1>
+          <p>Je leert vandaag zoals je later zal werken: professioneel, duidelijk, verzorgd en op tijd.</p>
+          <button class="primary" data-view="workday">Bekijk mijn werkdag</button>
+        </div>
+        <div class="profile-card">
+          <div class="avatar">JD</div>
+          <h2>Junior medewerker</h2>
+          <p>Level 1 · 0 XP</p>
+          <div class="xp"><span style="width:0%"></span></div>
+          <small>Start missie 01 om XP te verdienen.</small>
+        </div>
+      </div>
+
+      <div class="dashboard-grid">
+        <article class="focus-card">
+          <span class="label">Vandaag</span>
+          <h2>Missie 01 · Professioneel werken</h2>
+          <p>Je maakt kennis met de afspraken rond op tijd komen, planner, deadlines, beleefdheid en verwittigen bij problemen.</p>
+          <button class="primary" data-view="attitude">Start opdracht</button>
+        </article>
+        <article class="mini-card"><h3>Voortgang</h3><div class="big-number">0%</div><p>0 van 6 missies voltooid</p></article>
+        <article class="mini-card"><h3>Downloads</h3><p>Cursus, NBN-bron en voorbeelden staan klaar.</p><button class="secondary" data-view="downloads">Open downloads</button></article>
+      </div>
+
+      <h2 class="section-title">Mijn missies</h2>
+      <div class="mission-grid" id="missionGrid"></div>
+    </section>
+
+    <section class="view" id="workday">
+      <div class="page-head"><p class="eyebrow">Mijn werkdag</p><h1>Je eerste dag bij NorthBridge</h1><p>Sarah Jacobs geeft je opdrachten in een logische volgorde.</p></div>
+      <div class="timeline">
+        <article><span>08:30</span><h3>Startoverleg</h3><p>Je maakt kennis met professioneel werken in de klas.</p><button data-view="attitude">Open missie</button></article>
+        <article><span>09:10</span><h3>Nieuw bericht</h3><p>Je leert hoe je een Smartschoolbericht professioneel opstelt.</p><button data-view="smartschool">Open Smartschool</button></article>
+        <article><span>10:05</span><h3>Prijsaanvraag</h3><p>Je maakt de transfer naar Outlook en zakelijke e-mail.</p><button data-view="outlook">Open Outlook</button></article>
+        <article><span>11:00</span><h3>Documentopmaak</h3><p>Je raadpleegt de NBN-normen en past ze toe.</p><button data-view="nbn">Open NBN Lab</button></article>
+      </div>
+    </section>
+
+    <section class="view" id="apps">
+      <div class="page-head"><p class="eyebrow">Applicaties</p><h1>Je digitale werkplek</h1><p>Applicaties ondersteunen je werk. De missie blijft altijd het belangrijkste.</p></div>
+      <div class="app-grid">
+        <button class="app-tile" data-view="smartschool"><img src="assets/logos/smartschool-logo.png" alt=""><h3>Smartschool</h3><p>Hoofdcommunicatiekanaal op school.</p></button>
+        <button class="app-tile" data-view="outlook"><img src="assets/logos/outlook-logo.png" alt=""><h3>Outlook</h3><p>Professionele e-mail.</p></button>
+        <button class="app-tile" data-view="nbn"><img src="assets/logos/nbn-logo.png" alt=""><h3>NBN Lab</h3><p>Normen en documentopmaak.</p></button>
+      </div>
+    </section>
+
+    <section class="view" id="files">
+      <div class="page-head"><p class="eyebrow">Bestanden</p><h1>NorthBridge-bestanden</h1><p>Download voorbeeldbestanden en bronnen.</p></div>
+      <div class="file-list" id="fileList"></div>
+    </section>
+
+    <section class="view" id="progress">
+      <div class="page-head"><p class="eyebrow">Voortgang</p><h1>Je groeit naar professioneel werken</h1></div>
+      <div class="progress-layout">
+        <article class="level-card"><div class="level">1</div><h2>Junior administratief medewerker</h2><p>0 XP</p><div class="xp"><span style="width:0%"></span></div></article>
+        <article class="badge-card"><h2>Badges</h2><div class="badges"><span>⏰ Stipt</span><span>💬 Communicatie</span><span>📐 NBN</span><span>📄 Documenten</span></div></article>
+      </div>
+    </section>
+
+    <section class="view mission" id="attitude"></section>
+    <section class="view mission" id="smartschool"></section>
+    <section class="view mission" id="outlook"></section>
+    <section class="view mission" id="nbn"></section>
+    <section class="view mission" id="letter"></section>
+    <section class="view mission" id="documents"></section>
+
+    <section class="view" id="goals">
+      <div class="page-head"><p class="eyebrow">Leerkrachtenmodus</p><h1>Leerplandoelen</h1><p>Concrete koppelingen aan de missies.</p></div>
+      <div class="goal-list" id="goalList"></div>
+    </section>
+
+    <section class="view" id="downloads">
+      <div class="page-head"><p class="eyebrow">Downloads</p><h1>Downloadcentrum</h1><p>Alle bronnen en voorbeeldbestanden staan op één plaats.</p></div>
+      <div class="download-grid" id="downloadGrid"></div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
