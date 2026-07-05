@@ -24,7 +24,7 @@ $$('.case').forEach(card=>{card.querySelectorAll('button').forEach((btn,index)=>
 $('#downloadGrid').innerHTML=DATA.downloads.map(d=>`<article class="download-card"><h2>${d.title}</h2><p>${d.desc}</p><a href="${d.file}" download>Download</a></article>`).join('');
 $('#curriculumGrid').innerHTML=DATA.goals.map(g=>`<article class="curriculum-card"><h2>${g.code}</h2><p><strong>${g.title}</strong></p><p>${g.where}</p></article>`).join('');
 updateProgress();
-const MODULE2_DOWNLOADS = [{"title": "Volledige NBN-cursus", "desc": "Originele cursus als referentiebron.", "file": "downloads/module2/Cursus_NBN_normen_bron.pdf"}, {"title": "Module 2 samenvatting", "desc": "Kern van de NBN-richtlijnen.", "file": "downloads/module2/module2_nbn_samenvatting.pdf"}, {"title": "NBN-spiekkaart", "desc": "Kort overzicht van notaties.", "file": "downloads/module2/module2_nbn_spiekkaart.pdf"}, {"title": "Controlekaart NBN", "desc": "Checklist voor documenten.", "file": "downloads/module2/module2_nbn_checklist.pdf"}, {"title": "Voorbeeldbrief", "desc": "Reizen Delmonte.", "file": "downloads/module2/voorbeeldbrief_reis_oostenrijk.pdf"}, {"title": "Voorbeeldmail 1", "desc": "Bestelling Happy Face.", "file": "downloads/module2/voorbeeldmail_bestelling_happy_face.pdf"}, {"title": "Voorbeeldmail 2", "desc": "Antwoord Platenhuis.", "file": "downloads/module2/voorbeeldmail_antwoord_platenhuis.pdf"}, {"title": "Voorbeeldmail 3", "desc": "Afsluiting conversatie.", "file": "downloads/module2/voorbeeldmail_afsluiting_conversatie.pdf"}, {"title": "Sjabloon zakelijke brief", "desc": "Kopieerbaar sjabloon.", "file": "downloads/module2/sjabloon_zakelijke_brief.html"}];
+const MODULE2_DOWNLOADS = [{"title": "Volledige NBN-cursus", "desc": "Originele cursus als referentiebron.", "file": "downloads/module2/Cursus_NBN_normen_bron.pdf"}, {"title": "Module 2 samenvatting", "desc": "Kern van de NBN-richtlijnen.", "file": "downloads/module2/module2_nbn_samenvatting.pdf"}, {"title": "NBN-spiekkaart", "desc": "Kort overzicht van notaties.", "file": "downloads/module2/module2_nbn_spiekkaart.pdf"}, {"title": "Controlekaart NBN", "desc": "Checklist voor documenten.", "file": "downloads/module2/module2_nbn_checklist.pdf"}, {"title": "Voorbeeldbrief", "desc": "Reizen Delmonte.", "file": "downloads/module2/voorbeeldbrief_reis_oostenrijk.pdf"}, {"title": "Voorbeeldmail 1", "desc": "Bestelling Happy Face.", "file": "downloads/module2/voorbeeldmail_bestelling_happy_face.pdf"}, {"title": "Voorbeeldmail 2", "desc": "Antwoord Platenhuis.", "file": "downloads/module2/voorbeeldmail_antwoord_platenhuis.pdf"}, {"title": "Voorbeeldmail 3", "desc": "Afsluiting conversatie.", "file": "downloads/module2/voorbeeldmail_afsluiting_conversatie.pdf"}, {"title": "Sjabloon zakelijke brief", "desc": "Kopieerbaar sjabloon.", "file": "downloads/module2/sjabloon_zakelijke_brief.html"}, {"title": "Checklist Word-opdracht", "desc": "Controlelijst voor de zakelijke brief in Word.", "file": "downloads/module2/module2_werkopdracht_brief_checklist.pdf"}];
 const module2Grid = document.querySelector('#module2DownloadGrid');
 if(module2Grid){
   module2Grid.innerHTML = MODULE2_DOWNLOADS.map(d => `<article class="download-card"><h2>${d.title}</h2><p>${d.desc}</p><a href="${d.file}" download>Download</a></article>`).join('');
@@ -37,5 +37,27 @@ if(nbnLabButton){
     const result = document.querySelector('#nbnLabResult');
     result.textContent = `Score: ${score}/5. ${score === 5 ? 'Sterk: je herkent de belangrijkste controles.' : 'Kijk nog eens welke onderdelen altijd gecontroleerd moeten worden.'}`;
     result.style.color = score === 5 ? '#16a34a' : '#0067c5';
+  });
+}
+
+const nbnMcqButton = document.querySelector('#checkNbnLab');
+if(nbnMcqButton){
+  nbnMcqButton.addEventListener('click', () => {
+    const questions = [...document.querySelectorAll('.nbn-mcq')];
+    let score = 0;
+    questions.forEach(q => {
+      const correct = q.dataset.correct;
+      const checked = q.querySelector('input:checked');
+      q.style.borderColor = '#dce6ef';
+      if(checked && checked.value === correct){
+        score++;
+        q.style.borderColor = '#16a34a';
+      } else {
+        q.style.borderColor = '#dc2626';
+      }
+    });
+    const result = document.querySelector('#nbnLabResult');
+    result.textContent = `Score: ${score}/${questions.length}. ${score === questions.length ? 'Uitstekend: je past de NBN-afspraken correct toe.' : 'Bekijk de rood gemarkeerde vragen opnieuw en vergelijk met de voorbeelden in de theorie.'}`;
+    result.style.color = score === questions.length ? '#16a34a' : '#dc2626';
   });
 }

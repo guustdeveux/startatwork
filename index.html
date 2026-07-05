@@ -37,7 +37,8 @@
       <button class="nav" data-section="m2-examples"><span>19</span> Voorbeelden</button>
       <button class="nav" data-section="m2-lab"><span>20</span> NBN-lab</button>
       <button class="nav" data-section="m2-final"><span>21</span> Eindopdracht</button>
-      <button class="nav" data-section="m2-downloads"><span>22</span> Downloads NBN</button>
+      <button class="nav" data-section="m2-word-task"><span>22</span> Word-opdracht</button>
+      <button class="nav" data-section="m2-downloads"><span>23</span> Downloads NBN</button>
     </nav>
     <div class="progress-card"><small>Voortgang module 1</small><div class="progress"><div id="progressBar"></div></div><strong id="progressText">0%</strong></div>
   </aside>
@@ -183,9 +184,34 @@
 
     <section id="m2-layout" class="section"><article class="lesson">
       <p class="eyebrow">Documentopmaak</p><h1>Professionele documenten hebben rust, structuur en witruimte.</h1>
-      <p>Documentopmaak bepaalt hoe gemakkelijk een tekst gelezen wordt. Marges, witregels, alinea's en uitlijning lijken details, maar ze maken een groot verschil.</p>
-      <img class="wide-img" src="assets/images/margins.svg" alt="Marges">
-      <div class="steps"><div><span>1</span><h3>Marges</h3><p>Andere documenten: 2 cm aan alle zijden.</p></div><div><span>2</span><h3>Briefmarges</h3><p>Zakelijke brief: links 33 mm, andere zijden 20 mm.</p></div><div><span>3</span><h3>Witregels</h3><p>Tussen begroeting, kern, slot en handtekening.</p></div><div><span>4</span><h3>Structuur</h3><p>Onderwerp, inleiding, kern, slot en bijlage.</p></div></div>
+      <p>Documentopmaak bepaalt hoe gemakkelijk een tekst gelezen wordt. Marges, witregels, alinea's en uitlijning lijken details, maar ze maken een groot verschil. Een professioneel document ziet er rustig uit en helpt de lezer om snel de juiste informatie te vinden.</p>
+
+      <div class="margin-visuals">
+        <div>
+          <h2>Standaarddocument</h2>
+          <img class="wide-img compact-img" src="assets/images/margins.svg" alt="Standaardmarges 2 cm">
+          <p>Voor gewone documenten gebruik je standaard <strong>2 cm aan alle zijden</strong>.</p>
+        </div>
+        <div>
+          <h2>Zakelijke brief</h2>
+          <img class="wide-img compact-img" src="assets/images/briefmarges.svg" alt="Briefmarges met linkermarge 3,3 cm">
+          <p>Voor een zakelijke brief gebruik je links <strong>3,3 cm</strong> en aan de andere zijden <strong>2 cm</strong>.</p>
+        </div>
+      </div>
+
+      <div class="steps"><div><span>1</span><h3>Marges</h3><p>Andere documenten: 2 cm aan alle zijden.</p></div><div><span>2</span><h3>Briefmarges</h3><p>Zakelijke brief: links 3,3 cm, andere zijden 2 cm.</p></div><div><span>3</span><h3>Witregels</h3><p>Tussen begroeting, kern, slot en handtekening.</p></div><div><span>4</span><h3>Structuur</h3><p>Onderwerp, inleiding, kern, slot en bijlage.</p></div></div>
+
+      <div class="address-block">
+        <h2>Adresnotatie</h2>
+        <p>Een adres noteer je volledig en overzichtelijk. De woonplaats schrijf je in hoofdletters. Bij internationale adressen voeg je onderaan het land toe.</p>
+        <div class="address-example">
+          <p>Voornaam Achternaam<br>Bedrijfsnaam<br>Straat en nummer<br>Postcode en WOONPLAATS<br>Land</p>
+        </div>
+        <div class="info-row">
+          <div class="info-box school"><h3>Voorbeeld persoon</h3><p>Kaat Janssens<br>Leuvensesteenweg 44<br>1800 VILVOORDE<br>België</p></div>
+          <div class="info-box employer"><h3>Voorbeeld bedrijf</h3><p>Reizen Delmonte<br>Brouckèreplein 6<br>1000 BRUSSEL<br>België</p></div>
+        </div>
+      </div>
     </article></section>
 
     <section id="m2-notation" class="section"><article class="lesson">
@@ -205,16 +231,162 @@
     </article></section>
 
     <section id="m2-lab" class="section"><article class="lesson">
-      <p class="eyebrow">NBN-lab</p><h1>Controleer de belangrijkste NBN-afspraken.</h1>
+      <p class="eyebrow">NBN-lab</p><h1>Oefen met meerkeuzevragen.</h1>
+      <p>Lees elke vraag aandachtig en duid het correcte antwoord aan. Nadien controleer je je score. Bij sommige vragen lijken meerdere antwoorden op elkaar: let dus op spaties, komma's, hoofdletters en leestekens.</p>
       <img class="wide-img" src="assets/images/nbn-lab.svg" alt="NBN lab">
-      <div class="lab-grid"><label><input type="checkbox" class="nbn-check"> Datum volledig schrijven</label><label><input type="checkbox" class="nbn-check"> Geen leesteken na begroeting</label><label><input type="checkbox" class="nbn-check"> Bedrag als € 123,45</label><label><input type="checkbox" class="nbn-check"> Telefoonnummer groeperen</label><label><input type="checkbox" class="nbn-check"> Witregels tussen onderdelen</label></div>
-      <button class="primary" id="checkNbnLab">Controleer mijn score</button><p id="nbnLabResult" class="feedback"></p>
+
+      <div class="nbn-mcq" data-correct="20 juli 2009">
+        <h2>1. Welke datumnotatie is correct?</h2>
+        <label><input type="radio" name="q1" value="20/07/09"> 20/07/09</label>
+        <label><input type="radio" name="q1" value="20 juli 2009"> 20 juli 2009</label>
+        <label><input type="radio" name="q1" value="20-07-2009"> 20-07-2009</label>
+        <label><input type="radio" name="q1" value="20 JULI 2009"> 20 JULI 2009</label>
+      </div>
+
+      <div class="nbn-mcq" data-correct="€ 123,45">
+        <h2>2. Welke bedragnotatie is correct?</h2>
+        <label><input type="radio" name="q2" value="€123.45"> €123.45</label>
+        <label><input type="radio" name="q2" value="€ 123,45"> € 123,45</label>
+        <label><input type="radio" name="q2" value="123.45 euro"> 123.45 euro</label>
+        <label><input type="radio" name="q2" value="€123,45"> €123,45</label>
+      </div>
+
+      <div class="nbn-mcq" data-correct="gsm 0478 90 14 15">
+        <h2>3. Welke gsm-notatie is correct?</h2>
+        <label><input type="radio" name="q3" value="0478901415"> 0478901415</label>
+        <label><input type="radio" name="q3" value="0478/90.14.15"> 0478/90.14.15</label>
+        <label><input type="radio" name="q3" value="gsm 0478 90 14 15"> gsm 0478 90 14 15</label>
+        <label><input type="radio" name="q3" value="GSM: 0478-90-14-15"> GSM: 0478-90-14-15</label>
+      </div>
+
+      <div class="nbn-mcq" data-correct="Geachte mevrouw">
+        <h2>4. Welke begroeting is correct?</h2>
+        <label><input type="radio" name="q4" value="Geachte mevrouw,"> Geachte mevrouw,</label>
+        <label><input type="radio" name="q4" value="Geachte mevrouw"> Geachte mevrouw</label>
+        <label><input type="radio" name="q4" value="Geachte mevrouw."> Geachte mevrouw.</label>
+        <label><input type="radio" name="q4" value="Beste mevrouw,"> Beste mevrouw,</label>
+      </div>
+
+      <div class="nbn-mcq" data-correct="3500 HASSELT">
+        <h2>5. Welke woonplaatsnotatie is correct?</h2>
+        <label><input type="radio" name="q5" value="3500 Hasselt"> 3500 Hasselt</label>
+        <label><input type="radio" name="q5" value="3500 HASSELT"> 3500 HASSELT</label>
+        <label><input type="radio" name="q5" value="B-3500 Hasselt"> B-3500 Hasselt</label>
+        <label><input type="radio" name="q5" value="Hasselt 3500"> Hasselt 3500</label>
+      </div>
+
+      <button class="primary" id="checkNbnLab">Controleer mijn antwoorden</button>
+      <p id="nbnLabResult" class="feedback"></p>
     </article></section>
 
     <section id="m2-final" class="section"><article class="lesson">
-      <p class="eyebrow">Eindopdracht</p><h1>Controleer een professioneel document.</h1>
-      <p>Gebruik de controlekaart en verbeter minimaal vijf onderdelen. Vermeld telkens welke NBN-afspraak je toepast.</p>
-      <textarea placeholder="Verbeterpunt 1: ...&#10;NBN-afspraak: ..."></textarea>
+      <p class="eyebrow">Eindopdracht</p><h1>Je gaat nu zelf een zakelijke brief opstellen.</h1>
+      <p>Je hebt de NBN-richtlijnen geoefend. Nu pas je ze toe in Microsoft Word. In de volgende stap krijg je een volledige werkopdracht met casus, stappenplan, opslaginstructies en Smartschool-indiening.</p>
+      <button class="primary" data-section="m2-word-task">Open de Word-opdracht</button>
+    </article></section>
+
+    
+    <section id="m2-word-task" class="section"><article class="lesson">
+      <p class="eyebrow">Werkopdracht</p>
+      <h1>Stel een eenvoudige zakelijke brief op in Microsoft Word.</h1>
+      <p>Je voert deze opdracht uit alsof je net gestart bent bij NorthBridge Office Group. Je werkt nauwkeurig, volgt het stappenplan en dient je bestand correct in via Smartschool.</p>
+
+      <div class="message-card task-message">
+        <div class="person">SJ</div>
+        <div>
+          <h2>Nieuwe opdracht van Sarah Jacobs</h2>
+          <p>Welkom bij NorthBridge Office Group. De dienst Personeel wil voor elke nieuwe medewerker een korte professionele voorstelling bewaren in het personeelsdossier. Stel daarom een zakelijke brief op waarin je jezelf voorstelt en uitlegt waarom je graag in een administratieve omgeving wil werken.</p>
+        </div>
+      </div>
+
+      <div class="task-card">
+        <h2>Casus</h2>
+        <p>Je schrijft een brief aan de personeelsdienst van NorthBridge Office Group. In je brief:</p>
+        <ul>
+          <li>stel je jezelf kort voor;</li>
+          <li>vermeld je dat je 4 Organisatie & Logistiek volgt;</li>
+          <li>leg je uit waarom professioneel en administratief werken belangrijk is;</li>
+          <li>geef je aan dat je uitkijkt naar een toekomstige stage in het 5e jaar;</li>
+          <li>bedank je voor de warme ontvangst.</li>
+        </ul>
+      </div>
+
+      <div class="address-block">
+        <h2>Adres van de ontvanger</h2>
+        <div class="address-example">
+          <p>NorthBridge Office Group<br>Dienst Personeel<br>Stationsstraat 18<br>3500 HASSELT<br>België</p>
+        </div>
+      </div>
+
+      <div class="word-steps">
+        <h2>Stappenplan in Microsoft Word</h2>
+        <img class="wide-img" src="assets/images/word-brief.svg" alt="Microsoft Word brief">
+        <div class="steps-list">
+          <article><span>1</span><h3>Open Word</h3><p>Open Microsoft Word en kies <strong>Leeg document</strong>.</p></article>
+          <article><span>2</span><h3>Stel de marges in</h3><p>Ga naar <strong>Indeling → Marges → Aangepaste marges</strong>. Stel in: boven 2 cm, onder 2 cm, rechts 2 cm en links 3,3 cm.</p></article>
+          <article><span>3</span><h3>Kies het lettertype</h3><p>Gebruik <strong>Arial</strong>, lettergrootte <strong>11 pt</strong>.</p></article>
+          <article><span>4</span><h3>Kleur en uitlijning</h3><p>Gebruik tekstkleur <strong>Automatisch/zwart</strong>. Lijn de tekst <strong>links</strong> uit. Niet centreren en niet uitvullen.</p></article>
+          <article><span>5</span><h3>Regelafstand</h3><p>Gebruik regelafstand <strong>1,15</strong>.</p></article>
+          <article><span>6</span><h3>Adresblok</h3><p>Typ het adres van de ontvanger exact over. Gebruik hoofdletters voor de woonplaats.</p></article>
+          <article><span>7</span><h3>Datum</h3><p>Noteer de datum volledig, bijvoorbeeld: <strong>Hasselt, 5 juli 2026</strong>.</p></article>
+          <article><span>8</span><h3>Onderwerp</h3><p>Schrijf een duidelijke onderwerpregel, bijvoorbeeld: <strong>Voorstelling nieuwe administratieve medewerker</strong>.</p></article>
+          <article><span>9</span><h3>Begroeting</h3><p>Gebruik: <strong>Geachte mevrouw</strong>. Plaats geen komma of ander leesteken na de begroeting.</p></article>
+          <article><span>10</span><h3>Schrijf de brief</h3><p>Gebruik meerdere alinea's en witregels. Schrijf volledige zinnen en verzorg je taal.</p></article>
+          <article><span>11</span><h3>Slotformule</h3><p>Sluit af met <strong>Met vriendelijke groeten</strong> en daaronder je voornaam en naam.</p></article>
+          <article><span>12</span><h3>Controleer</h3><p>Lees alles na: marges, datum, onderwerp, begroeting, witregels, spelling en naam.</p></article>
+        </div>
+      </div>
+
+      <div class="save-flow">
+        <h2>Opslaan in OneDrive</h2>
+        <img class="wide-img" src="assets/images/onedrive-flow.svg" alt="OneDrive opslag">
+        <p>Sla je brief op in <strong>OneDrive</strong> in de map <strong>Organisatie en Project</strong>.</p>
+        <div class="filename-box">
+          <h3>Bestandsnaam</h3>
+          <p>Gebruik altijd deze structuur:</p>
+          <code>JJJJMMDD_VoornaamNaam_NaamVanDeOpdracht</code>
+          <p>Voorbeeld:</p>
+          <code>20260705_GuustDeveux_BriefNBNNormen</code>
+        </div>
+        <p><strong>Let op:</strong> gebruik geen spaties en geen speciale tekens. Word voegt de extensie .docx automatisch toe.</p>
+      </div>
+
+      <div class="smartschool-flow">
+        <h2>Indienen via Smartschool</h2>
+        <img class="wide-img" src="assets/images/smartschool-upload.svg" alt="Smartschool uploadzone">
+        <ol>
+          <li>Open Smartschool.</li>
+          <li>Ga naar de juiste opdracht.</li>
+          <li>De leerkracht noteert de correcte uploadzone op het bord.</li>
+          <li>Klik op <strong>Bestand toevoegen</strong>.</li>
+          <li>Selecteer je Word-document uit OneDrive.</li>
+          <li>Controleer of je het juiste bestand hebt gekozen.</li>
+          <li>Klik op <strong>Indienen</strong>.</li>
+        </ol>
+      </div>
+
+      <div class="rubric-card">
+        <h2>Beoordelingsrubriek</h2>
+        <table class="value-table">
+          <tr><th>Onderdeel</th><th>Punten</th></tr>
+          <tr><td>Marges correct ingesteld</td><td>2</td></tr>
+          <tr><td>Arial 11 pt, zwarte tekst, links uitgelijnd</td><td>2</td></tr>
+          <tr><td>Adresblok en datum correct</td><td>3</td></tr>
+          <tr><td>Onderwerp en begroeting correct</td><td>2</td></tr>
+          <tr><td>Inhoud duidelijk en professioneel</td><td>4</td></tr>
+          <tr><td>Witregels, slotformule en naam</td><td>3</td></tr>
+          <tr><td>Correct opgeslagen in OneDrive</td><td>2</td></tr>
+          <tr><td>Correct ingediend via Smartschool</td><td>2</td></tr>
+        </table>
+      </div>
+
+      <div class="download-grid one-download">
+        <article class="download-card">
+          <h2>Checklist werkopdracht</h2>
+          <p>Gebruik deze checklist tijdens het schrijven van je brief.</p>
+          <a href="downloads/module2/module2_werkopdracht_brief_checklist.pdf" download>Download checklist</a>
+        </article>
+      </div>
     </article></section>
 
     <section id="m2-downloads" class="section"><article class="lesson">

@@ -1,4 +1,9 @@
-START@WORK v10.1 FIXED - Module 1 + zichtbare Module 2 NBN
+START@WORK v10.1 Module 2 update B
 
-Deze versie voegt Module 2 zichtbaar toe aan de zijbalk én aan het startscherm.
-Upload de inhoud van deze map naar de root van GitHub.
+Toegevoegd:
+- Werkopdracht zakelijke brief in Microsoft Word.
+- Stap-voor-stap Word-instructies voor instromers.
+- Opslaan in OneDrive > Organisatie en Project.
+- Bestandsnaamstructuur: JJJJMMDD_VoornaamNaam_NaamVanDeOpdracht.
+- Indienen via Smartschool-uploadzone.
+- Rubric en downloadbare checklist.
