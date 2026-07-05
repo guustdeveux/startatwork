@@ -1,21 +1,12 @@
-START@WORK v0.7
+START@WORK v0.8
 
 Open index.html in je browser of publiceer via GitHub Pages.
 
-Nieuw in v0.7:
-- Nieuwe visuele stijl geïnspireerd op het goedgekeurde NBN Lab-concept.
-- NBN-logo geïntegreerd in NBN Lab.
-- NBN Lab kreeg een stijlvolle banner, downloadpaneel en theorielijst.
-- Voorbeelddocumenten toegevoegd als download:
-  - voorbeeld_zakelijke_brief_nbn.pdf
-  - voorbeeld_documentinstellingen.pdf
-  - voorbeeld_documentenstroom.pdf
-- Favicon en webmanifest toegevoegd voor GitHub Pages / tablet.
-- 404.html toegevoegd.
-- Logo's van v0.6 behouden voor Hast Katholiek Onderwijs Hasselt, Smartschool en Outlook.
-
-
-v0.7.1:
-- Menu links opnieuw duidelijker gemaakt met secties, iconen, titels en subtitels.
-- HAST-, Smartschool- en Outlook-logo's opnieuw prominent zichtbaar in de zijbalk en topbalk.
-- Logo's visueel groter en beter uitgelijnd.
+Nieuw in v0.8:
+- Visuele redesign met rustigere hero, duidelijkere navigatiehiërarchie en missiekaarten.
+- Elke missie volgt hetzelfde stramien: doel, theorie, voorbeeld, oefening, checklist, eindopdracht, download.
+- Smartschool- en Outlooksimulatoren ogen meer als echte formulieren.
+- NBN Lab bevat concrete voorbeelden: datum, tijd, bedrag, telefoon, gsm, IBAN/BIC en marges.
+- Downloads zijn herwerkt als duidelijke downloadkaarten.
+- START@WORK cursus v0.8 toegevoegd.
+- BrightOffice Solutions behouden als fictieve werkomgeving.
