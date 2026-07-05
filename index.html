@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>START@WORK v0.6</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brandmark">S@W</div>
+      <div>
+        <strong>START@WORK</strong>
+        <span>4 Organisatie & Logistiek</span>
+      </div>
+    </div>
+    <div class="school-logo-card">
+      <img src="assets/logos/hast-logo.png" alt="Hast Katholiek Onderwijs Hasselt">
+      <small>Hast Katholiek Onderwijs Hasselt</small>
+    </div>
+    <nav>
+      <button class="nav active" data-screen="dashboard">Mijn bureau</button>
+      <button class="nav" data-screen="attitude">Professioneel werken</button>
+      <button class="nav" data-screen="smartschool">Smartschool</button>
+      <button class="nav" data-screen="outlook">Outlook</button>
+      <button class="nav" data-screen="nbn">NBN Lab</button>
+      <button class="nav" data-screen="brief">Zakelijke brief</button>
+      <button class="nav" data-screen="leerplan">Leerplandoelen</button>
+      <button class="nav" data-screen="downloads">Downloads</button>
+    </nav>
+    <div class="progressbox">
+      <small>Voortgang</small>
+      <div class="progress"><div id="progress"></div></div>
+      <b id="progressLabel">0%</b>
+    </div>
+    <button id="theme" class="theme">Donkere modus</button>
+  </aside>
+
+  <main>
+    <section id="dashboard" class="screen active">
+      <div class="hero">
+        <div>
+          <img class="hero-logo" src="assets/logos/hast-logo.png" alt="Hast Katholiek Onderwijs Hasselt">
+          <p class="eyebrow">BrightOffice Solutions</p>
+          <h1>Je gaat werken zoals een professional.</h1>
+          <p class="lead">Je start als junior administratief medewerker in een fictief bedrijf. Je oefent attitude, Smartschool, Outlook, NBN-normen en zakelijke documenten.</p>
+          <div class="actions">
+            <button class="primary jump" data-screen="attitude">Start missie 0</button>
+            <a class="secondary" href="downloads/START@WORK_cursus_v06.pdf" download>Download cursus</a>
+          </div>
+        </div>
+        <div class="visual">
+          <div class="visualIcon">🏢</div>
+          <h3>BrightOffice Solutions</h3>
+          <p>Een fictief bedrijf waarin jij de rol van junior administratief medewerker opneemt.</p>
+        </div>
+      </div>
+      <div class="cards3">
+        <article class="card soft-blue"><div class="card-icon">👔</div><h2>Je houding telt</h2><p>Je komt op tijd, houdt je planner bij, respecteert deadlines en communiceert correct.</p></article>
+        <article class="card soft-red"><img class="mini-logo" src="assets/logos/smartschool-logo.png" alt="Smartschool"><h2>Smartschool eerst</h2><p>Smartschool is je hoofdcommunicatiemiddel op school.</p></article>
+        <article class="card soft-outlook"><img class="mini-logo" src="assets/logos/outlook-logo.png" alt="Outlook"><h2>Outlook als transfer</h2><p>Je past dezelfde professionele afspraken toe in Outlook.</p></article>
+      </div>
+    </section>
+
+    <section id="attitude" class="screen">
+      <header class="screenhead">
+        <p class="eyebrow">Missie 0</p>
+        <h1>Je werkt professioneel in de klas.</h1>
+        <p>Je leert vandaag zoals je later zal werken. In Organisatie & Logistiek oefen je niet alleen kennis, maar ook beroepshouding.</p>
+      </header>
+
+      <article class="card learn-card">
+        <div class="learn-icon">🎯</div>
+        <div>
+          <h2>Wat ga je leren?</h2>
+          <ul class="pretty-list">
+            <li><span>✓</span>Je kan uitleggen wat professioneel gedrag betekent in de klas.</li>
+            <li><span>✓</span>Je kan tonen hoe je op tijd komt, deadlines respecteert en je planner gebruikt.</li>
+            <li><span>✓</span>Je kan beleefd communiceren wanneer je ziek bent of een probleem hebt.</li>
+            <li><span>✓</span>Je kan waarden onderscheiden van normen.</li>
+          </ul>
+        </div>
+      </article>
+
+      <div class="attitude-grid">
+        <article class="expectation"><div class="exp-top"><span>⏰</span><h2>Je bent op tijd</h2></div><div class="do-dont"><div class="do"><b>Zo doe je het goed</b><p>Je bent vóór het belsignaal aanwezig. Je laptop ligt klaar en je bent aangemeld.</p></div><div class="dont"><b>Zo niet</b><p>Je komt te laat binnen, zoekt je oplader en stoort de start van de les.</p></div></div><p class="why">Waarom? Collega's en klanten moeten later ook op jou kunnen rekenen.</p></article>
+        <article class="expectation"><div class="exp-top"><span>📒</span><h2>Je houdt je planner bij</h2></div><div class="do-dont"><div class="do"><b>Zo doe je het goed</b><p>Je noteert opdrachten en deadlines onmiddellijk. Je kijkt dagelijks wat je nog moet doen.</p></div><div class="dont"><b>Zo niet</b><p>Je zegt: "Ik wist niet dat er een taak was" of "Ik dacht dat het volgende week was".</p></div></div><p class="why">Waarom? Plannen is een basisvaardigheid in administratie en logistiek.</p></article>
+        <article class="expectation"><div class="exp-top"><span>📅</span><h2>Je respecteert deadlines</h2></div><div class="do-dont"><div class="do"><b>Zo doe je het goed</b><p>Je dient tijdig in. Lukt iets niet, dan verwittig je vooraf via Smartschool.</p></div><div class="dont"><b>Zo niet</b><p>Je wacht tot na de deadline en zegt pas achteraf dat het niet lukte.</p></div></div><p class="why">Waarom? In een bedrijf veroorzaakt te laat werk vaak problemen voor anderen.</p></article>
+        <article class="expectation"><div class="exp-top"><span>💬</span><h2>Je communiceert beleefd</h2></div><div class="do-dont"><div class="do"><b>Zo doe je het goed</b><p>Je gebruikt "Geachte mevrouw", volledige zinnen en "Met vriendelijke groet".</p></div><div class="dont"><b>Zo niet</b><p>Je schrijft: "hey", "kheb da ni", "mvg", "???" of "stuur da eens".</p></div></div><p class="why">Waarom? Je communicatie toont je professionaliteit.</p></article>
+        <article class="expectation"><div class="exp-top"><span>🧼</span><h2>Je bent verzorgd</h2></div><div class="do-dont"><div class="do"><b>Zo doe je het goed</b><p>Je verzorgt je voorkomen, je materiaal, je documenten en je taalgebruik.</p></div><div class="dont"><b>Zo niet</b><p>Je levert slordige documenten in of verschijnt onverzorgd op een bedrijfsbezoek.</p></div></div><p class="why">Waarom? Je vertegenwoordigt jezelf, je klas en Hast Katholiek Onderwijs Hasselt.</p></article>
+        <article class="expectation"><div class="exp-top"><span>📩</span><h2>Je verwittigt tijdig</h2></div><div class="do-dont"><div class="do"><b>Zo doe je het goed</b><p>Bij ziekte volgen je ouders de schoolafspraken. Bij een probleem verwittig jij vooraf je leraar.</p></div><div class="dont"><b>Zo niet</b><p>Je laat niets weten en verwacht dat iedereen achteraf begrip heeft.</p></div></div><p class="why">Waarom? Problemen verzwijgen is niet professioneel.</p></article>
+      </div>
+
+      <div class="grid2">
+        <article class="card"><h2>Waarden en normen</h2><p><strong>Een waarde</strong> is iets dat je belangrijk vindt, zoals respect, verantwoordelijkheid of eerlijkheid.</p><p><strong>Een norm</strong> is een concrete afspraak waarmee je een waarde toont.</p><div class="value-norm"><span>Waarde: respect</span><b>→</b><span>Norm: je luistert wanneer iemand spreekt.</span></div></article>
+        <article class="card"><h2>Oefening: waarde of norm?</h2><div class="vn-quiz"><button data-answer="waarde">Respect</button><button data-answer="norm">Je komt op tijd naar de les.</button><button data-answer="waarde">Verantwoordelijkheid</button><button data-answer="norm">Je noteert deadlines in je planner.</button></div><p id="vnFeedback" class="feedback"></p></article>
+      </div>
+
+      <article class="card checklist-card"><div class="check-head"><span>✅</span><h2>START@WORK-belofte</h2></div><ul class="beautiful-checks"><li><label><input type="checkbox" class="task"><span></span>Je komt op tijd en start voorbereid.</label></li><li><label><input type="checkbox" class="task"><span></span>Je houdt je planner bij.</label></li><li><label><input type="checkbox" class="task"><span></span>Je levert taken op tijd in.</label></li><li><label><input type="checkbox" class="task"><span></span>Je communiceert beleefd via Smartschool.</label></li><li><label><input type="checkbox" class="task"><span></span>Je verwittigt je leraar tijdig bij problemen.</label></li><li><label><input type="checkbox" class="task"><span></span>Je verzorgt je documenten en je voorkomen.</label></li></ul></article>
+    </section>
+
+    <section id="smartschool" class="screen">
+      <header class="screenhead logo-head smartschool-head">
+        <img src="assets/logos/smartschool-logo.png" alt="Smartschool">
+        <div><p class="eyebrow">Missie 1</p><h1>Je gebruikt Smartschool professioneel.</h1><p>Smartschool is je hoofdcommunicatiemiddel op school. Je schrijft alsof je boodschap ook professioneel gelezen kan worden.</p></div>
+      </header>
+      <article class="card learn-card"><div class="learn-icon">🎯</div><div><h2>Wat ga je leren?</h2><ul class="pretty-list"><li><span>✓</span>Je kan een duidelijke onderwerpregel schrijven.</li><li><span>✓</span>Je kan een begroeting schrijven zonder leesteken erna.</li><li><span>✓</span>Je kan een probleem of vraag concreet uitleggen.</li><li><span>✓</span>Je kan je Smartschoolhandtekening maken en kopiëren.</li></ul></div></article>
+      <div class="grid2">
+        <article class="card"><h2>Begroeting zonder leesteken</h2><div class="example good">Geachte mevrouw<br><br>Ik heb een vraag over opdracht 2.</div><div class="example bad">Geachte mevrouw,<br><br>Ik heb een vraag over opdracht 2.</div></article>
+        <article class="card signature-tool"><h2>Handtekeninggenerator Smartschool</h2><label>Voornaam Achternaam <input id="ssSigName" placeholder="Voornaam Achternaam"></label><label>Klas <input id="ssSigClass" placeholder="4 Organisatie & Logistiek"></label><button class="primary" id="buildSSSig">Maak mijn handtekening</button><button class="secondary" id="copySSSig">Kopieer</button><div id="ssSigOut" class="signature">Met vriendelijke groet<br><br>[Voornaam Achternaam]<br>[Klas]</div><p id="copyMsg" class="feedback"></p></article>
+      </div>
+      <article class="simulator smartschool-sim"><h2>Smartschoolbericht-simulator</h2><p>Je verwittigt je leraar dat je een probleem hebt met het uploaden van een opdracht.</p><label>Onderwerp <input id="ssSubject" placeholder="Probleem bij uploaden opdracht Canva"></label><label>Bericht <textarea id="ssBody" rows="9" placeholder="Geachte mevrouw&#10;&#10;Ik probeer mijn opdracht in te dienen, maar...&#10;&#10;Met vriendelijke groet&#10;&#10;Voornaam Achternaam&#10;4 Organisatie & Logistiek"></textarea></label><button class="primary" id="checkSS">Controleer mijn bericht</button><div id="ssResult" class="result"></div></article>
+    </section>
+
+    <section id="outlook" class="screen">
+      <header class="screenhead logo-head outlook-head">
+        <img src="assets/logos/outlook-logo.png" alt="Outlook">
+        <div><p class="eyebrow">Missie 2</p><h1>Je past dezelfde afspraken toe in Outlook.</h1><p>Outlook is de transfer naar professionele e-mail in het werkveld.</p></div>
+      </header>
+      <article class="card learn-card"><div class="learn-icon">🎯</div><div><h2>Wat ga je leren?</h2><ul class="pretty-list"><li><span>✓</span>Je kan een professionele schoolmail schrijven.</li><li><span>✓</span>Je kan dezelfde handtekening instellen in Outlook.</li><li><span>✓</span>Je kan bijlagen correct vermelden.</li></ul></div></article>
+      <div class="grid2"><article class="card"><h2>Outlookhandtekening</h2><p>Je gebruikt hetzelfde basissjabloon:</p><div class="signature">Met vriendelijke groet<br><br>[Voornaam Achternaam]<br>[Klas]</div></article><article class="card"><h2>Instellen in Outlook</h2><ol class="steps"><li>Je opent Outlook met je schoolaccount.</li><li>Je opent Instellingen.</li><li>Je zoekt Opstellen en beantwoorden of E-mailhandtekening.</li><li>Je plakt de handtekening.</li><li>Je zet automatisch toevoegen aan.</li></ol></article></div>
+    </section>
+
+    <section id="nbn" class="screen">
+      <header class="screenhead"><p class="eyebrow">Missie 3</p><h1>Je werkt in het NBN Lab.</h1><p>Je leest de broncursus en past de afspraken toe in documenten en communicatie.</p></header>
+      <article class="card learn-card"><div class="learn-icon">🎯</div><div><h2>Wat ga je leren?</h2><ul class="pretty-list"><li><span>✓</span>Je kan de NBN-broncursus raadplegen.</li><li><span>✓</span>Je kan datum, tijd, bedragen, telefoonnummers en IBAN/BIC correct noteren.</li><li><span>✓</span>Je kent het verschil tussen briefmarges en standaardmarges.</li></ul></div></article>
+      <article class="card pdf-card"><div class="pdf-top"><div><h2>NBN-broncursus</h2><p>Deze PDF is letterlijk geïntegreerd. Je kan ze openen, lezen en downloaden.</p></div><div class="actions"><a class="primary" href="downloads/Cursus_NBN_normen_bron.pdf" target="_blank">Open groot</a><a class="secondary" href="downloads/Cursus_NBN_normen_bron.pdf" download>Download PDF</a></div></div><iframe src="downloads/Cursus_NBN_normen_bron.pdf" title="Cursus NBN-normen"></iframe></article>
+      <div class="nbnGrid"><article class="card"><h2>Briefmarges</h2><p>Zakelijke brief: links 33 mm; rechts, boven en beneden 20 mm.</p></article><article class="card"><h2>Andere documenten</h2><p>Standaardmarges: 2 cm aan alle zijden.</p></article><article class="card"><h2>Begroeting</h2><p>Geen leesteken na de begroeting.</p></article><article class="card"><h2>Bedragen</h2><p>123,45 EUR of € 123,45.</p></article></div>
+    </section>
+
+    <section id="brief" class="screen">
+      <header class="screenhead"><p class="eyebrow">Missie 4</p><h1>Je stelt een zakelijke brief op.</h1><p>Je past de NBN-briefmarges en briefonderdelen toe.</p></header>
+      <article class="card"><h2>Casus: laattijdige levering</h2><p>Je werkt bij BrightOffice Solutions. Leverancier OfficePlus bv leverde 25 archiefmappen en 10 bureaustoelen vier dagen te laat. Sarah vraagt je om een beleefde zakelijke brief te schrijven waarin je om toelichting vraagt.</p><div class="casebox"><strong>Geadresseerde</strong><br>OfficePlus bv<br>t.a.v. mevrouw Lotte Peeters<br>Afdeling verkoop<br>Industrieweg 45<br>3600 GENK<br><br><strong>Onderwerp</strong><br>Vraag om toelichting bij laattijdige levering</div></article>
+      <article class="card checklist-card"><div class="check-head"><span>🧾</span><h2>Controlelijst zakelijke brief</h2></div><ul class="beautiful-checks"><li><label><input type="checkbox" class="task"><span></span>Je gebruikt briefmarges: links 33 mm, andere zijden 20 mm.</label></li><li><label><input type="checkbox" class="task"><span></span>Je adresruimte is volledig en correct.</label></li><li><label><input type="checkbox" class="task"><span></span>Je datum is correct genoteerd.</label></li><li><label><input type="checkbox" class="task"><span></span>Je begroeting heeft geen leesteken erna.</label></li><li><label><input type="checkbox" class="task"><span></span>Je brief is beleefd, duidelijk en oplossingsgericht.</label></li></ul></article>
+    </section>
+
+    <section id="leerplan" class="screen"><header class="screenhead"><p class="eyebrow">Leerkrachtenmodus</p><h1>Concrete leerplandoelkoppelingen</h1><p>De doelen zijn concreet gekoppeld aan START@WORK. De codevorm volgt de KOV-structuur.</p></header><div id="goalsTable" class="goals"></div></section>
+
+    <section id="downloads" class="screen">
+      <header class="screenhead"><p class="eyebrow">Downloads</p><h1>Je kan de cursus downloaden.</h1></header>
+      <div class="grid2"><article class="card downloadcard"><h2>START@WORK cursus v0.6</h2><p>Downloadbare cursus met missie 0, Smartschool, Outlook, NBN, briefopdracht en leerplandoelen.</p><a class="primary" href="downloads/START@WORK_cursus_v06.pdf" download>Download cursus</a></article><article class="card downloadcard"><h2>NBN-broncursus</h2><p>De aangeleverde NBN-cursus is letterlijk beschikbaar als PDF.</p><a class="secondary" href="downloads/Cursus_NBN_normen_bron.pdf" download>Download NBN-PDF</a></article></div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
