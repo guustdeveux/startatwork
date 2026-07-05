@@ -5,4 +5,5 @@
 .doc-card a{display:inline-block;margin-top:10px;background:var(--blue);color:white;text-decoration:none;border-radius:999px;padding:10px 14px;font-weight:950}
 .lab-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:22px 0}
 .lab-grid label{background:#f8fbfe;border:1px solid var(--line);border-radius:16px;padding:14px;font-weight:850}
+.module2-teaser{margin-top:26px}
 @media(max-width:1100px){.example-doc-grid,.lab-grid{grid-template-columns:1fr}}

@@ -1,6 +1,5 @@
 {
-  "release": "START@WORK v10.1 Module 2 NBN",
+  "release": "v10.1-fixed",
   "status": "OK",
-  "missing": [],
-  "optional_missing": []
+  "missing": []
 }
