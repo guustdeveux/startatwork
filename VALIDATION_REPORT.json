@@ -1,13 +1,12 @@
 {
-  "release": "v11.6-next-steps-orderbevestiging-fix",
+  "release": "v11.7-nbn-cursus-hersteld",
   "status": "OK",
   "missing": [],
   "checks": {
-    "order_pdf_exists": true,
-    "order_preview_rendered": true,
-    "render_ok": true,
-    "step_nav_present": true,
-    "next_buttons": true,
-    "step_js": true
+    "course_pdf_copied": true,
+    "summary_replaced": true,
+    "m2_what_course_block": true,
+    "download_link": true,
+    "viewer_link": true
   }
 }

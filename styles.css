@@ -1326,3 +1326,29 @@ section.exercise-zone article,
     width:100%;
   }
 }
+
+/* v11.7 NBN cursus hersteld */
+.nbn-course-card{
+  border-top:7px solid var(--m2, #7c3aed)!important;
+  background:#fbf7ff!important;
+}
+
+.nbn-course-card h2::before{
+  content:"📘 ";
+}
+
+.nbn-course-card iframe,
+#m2-summary .pdf-viewer-card iframe{
+  width:100%;
+  min-height:860px;
+  border:1px solid var(--line);
+  border-radius:18px;
+  background:white;
+}
+
+@media(max-width:980px){
+  .nbn-course-card iframe,
+  #m2-summary .pdf-viewer-card iframe{
+    min-height:68vh;
+  }
+}

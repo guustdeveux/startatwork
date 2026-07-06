@@ -32,3 +32,9 @@ Aangepast:
 - Previewafbeelding van de orderbevestiging opnieuw gerenderd.
 - Onderaan elke pagina staat nu een 'Vorige stap / Volgende stap'-navigatiekaart.
 - Per pagina wordt stapnummer en voortgang binnen de module getoond.
+
+
+## v11.7 NBN-cursus hersteld
+- De aangeleverde originele NBN-cursus is integraal toegevoegd.
+- Het document staat in Module 2, stap 2, als viewer én download.
+- De oudere samenvatting is vervangen door dit volledige document.
