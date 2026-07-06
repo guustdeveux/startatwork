@@ -1665,3 +1665,20 @@ body.dark-mode td,
 .dark-mode td{
   border-color:rgba(255,255,255,.16)!important;
 }
+
+/* v11.9 NBN cursus scope fix */
+.nbn-reference-card{
+  background:#fbf7ff;
+  border:1px solid rgba(124,58,237,.25);
+  border-left:7px solid var(--m2, #7c3aed);
+  border-radius:20px;
+  padding:20px;
+  margin:24px 0;
+}
+
+body.dark .nbn-reference-card,
+body.dark-mode .nbn-reference-card,
+.dark-mode .nbn-reference-card{
+  background:#20133d!important;
+  border-color:rgba(196,181,253,.35)!important;
+}

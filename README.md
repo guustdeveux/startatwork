@@ -44,3 +44,9 @@ Aangepast:
 - Donkere modus leesbaar gemaakt voor titels, paragrafen, kaarten, oefeningen, tabellen en navigatie.
 - Oefenkaders blijven herkenbaar oranje, maar krijgen donkere tekst/achtergronden met voldoende contrast.
 - PDF- en documentpreviews blijven wit voor goede leesbaarheid.
+
+
+## v11.9 NBN-cursus scope fix
+- De NBN-cursus wordt niet langer op elke pagina getoond.
+- De PDF-viewer staat alleen nog in Module 2 > Samenvatting NBN.
+- Module 2 stap 2 bevat enkel een compacte verwijzing naar de cursus.

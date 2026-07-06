@@ -1,12 +1,13 @@
 {
-  "release": "v11.8-dark-mode-fix",
+  "release": "v11.9-nbn-cursus-scope-fix",
   "status": "OK",
   "missing": [],
   "checks": {
-    "dark_body": true,
-    "titles_fixed": true,
-    "cards_fixed": true,
-    "exercise_fixed": true,
-    "sidebar_fixed": true
-  }
+    "single_course_iframe": true,
+    "course_in_summary": true,
+    "reference_in_m2what": true,
+    "course_pdf_exists": true,
+    "summary_section_exists": true
+  },
+  "course_iframe_count": 1
 }
