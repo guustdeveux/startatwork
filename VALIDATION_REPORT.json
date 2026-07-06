@@ -1,12 +1,12 @@
 {
-  "release": "v11.1-mobile-ready",
+  "release": "v11.2-ux-polish-oefenkaders",
   "status": "OK",
   "missing": [],
   "checks": {
-    "mobile_button": true,
-    "overlay": true,
-    "mobile_css": true,
-    "mobile_js": true,
-    "sidebar_id": true
+    "active_nav_contrast": true,
+    "exercise_shell_css": true,
+    "iframe_exercise_css": true,
+    "exercise_js": true,
+    "mobile_kept": true
   }
 }

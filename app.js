@@ -373,3 +373,31 @@ document.addEventListener('click', (e) => {
 window.addEventListener('keydown', (e) => {
   if(e.key === 'Escape') closeMobileSidebar();
 });
+
+/* V11.2 exercise shell enhancer */
+document.addEventListener('DOMContentLoaded', () => {
+  const exerciseSelectors = [
+    '#m2-lab article',
+    '#m3-lab article',
+    '#m4-lab-new article',
+    '#m4-oefening article'
+  ];
+
+  exerciseSelectors.forEach(sel => {
+    document.querySelectorAll(sel).forEach(el => el.classList.add('exercise-shell'));
+  });
+
+  document.querySelectorAll('.bookwidget-card, .document-analysis').forEach(el => {
+    el.classList.add('exercise-shell');
+  });
+
+  // Make external iframe exercise announcement clearer
+  document.querySelectorAll('.oefen-fallback, .oefen-card').forEach(card => {
+    if(!card.querySelector('.exercise-intro-line')){
+      const intro = document.createElement('p');
+      intro.className = 'exercise-intro-line';
+      intro.innerHTML = '<strong>Oefenmoment:</strong> open de oefening en werk zelfstandig. Vraag hulp wanneer het iframe niet laadt.';
+      card.insertBefore(intro, card.firstElementChild?.nextSibling || card.firstChild);
+    }
+  });
+});
