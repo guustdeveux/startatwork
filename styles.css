@@ -1352,3 +1352,316 @@ section.exercise-zone article,
     min-height:68vh;
   }
 }
+
+/* =========================================================
+   v11.8 Dark mode readability fix
+   ========================================================= */
+
+/* Algemene donkere modus */
+body.dark,
+body.dark-mode,
+.dark-mode,
+[data-theme="dark"]{
+  background:#071d34!important;
+  color:#eaf4ff!important;
+}
+
+/* Basis tekstkleuren */
+body.dark *,
+body.dark-mode *,
+.dark-mode *,
+[data-theme="dark"] *{
+  border-color:rgba(255,255,255,.14);
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark p,
+body.dark li,
+body.dark label,
+body.dark strong,
+body.dark span,
+body.dark small,
+body.dark td,
+body.dark th,
+body.dark .lead,
+body.dark .eyebrow,
+body.dark .feedback,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode p,
+body.dark-mode li,
+body.dark-mode label,
+body.dark-mode strong,
+body.dark-mode span,
+body.dark-mode small,
+body.dark-mode td,
+body.dark-mode th,
+body.dark-mode .lead,
+body.dark-mode .eyebrow,
+body.dark-mode .feedback,
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode p,
+.dark-mode li,
+.dark-mode label,
+.dark-mode strong,
+.dark-mode span,
+.dark-mode small,
+.dark-mode td,
+.dark-mode th,
+.dark-mode .lead,
+.dark-mode .eyebrow,
+.dark-mode .feedback{
+  color:#eaf4ff!important;
+}
+
+/* Kaarten en contentvlakken donker maken */
+body.dark .lesson,
+body.dark .hero,
+body.dark .dashboard-hero,
+body.dark .manager-card,
+body.dark .next-task-card,
+body.dark .level-card,
+body.dark .module-tile,
+body.dark .task-card,
+body.dark .info-box,
+body.dark .message-card,
+body.dark .download-card,
+body.dark .pdf-viewer-card,
+body.dark .pdf-document-card,
+body.dark .document-analysis,
+body.dark .bookwidget-card,
+body.dark .step-nav-card,
+body.dark .value-table,
+body.dark-mode .lesson,
+body.dark-mode .hero,
+body.dark-mode .dashboard-hero,
+body.dark-mode .manager-card,
+body.dark-mode .next-task-card,
+body.dark-mode .level-card,
+body.dark-mode .module-tile,
+body.dark-mode .task-card,
+body.dark-mode .info-box,
+body.dark-mode .message-card,
+body.dark-mode .download-card,
+body.dark-mode .pdf-viewer-card,
+body.dark-mode .pdf-document-card,
+body.dark-mode .document-analysis,
+body.dark-mode .bookwidget-card,
+body.dark-mode .step-nav-card,
+body.dark-mode .value-table,
+.dark-mode .lesson,
+.dark-mode .hero,
+.dark-mode .dashboard-hero,
+.dark-mode .manager-card,
+.dark-mode .next-task-card,
+.dark-mode .level-card,
+.dark-mode .module-tile,
+.dark-mode .task-card,
+.dark-mode .info-box,
+.dark-mode .message-card,
+.dark-mode .download-card,
+.dark-mode .pdf-viewer-card,
+.dark-mode .pdf-document-card,
+.dark-mode .document-analysis,
+.dark-mode .bookwidget-card,
+.dark-mode .step-nav-card,
+.dark-mode .value-table{
+  background:#0b2a4a!important;
+  color:#eaf4ff!important;
+  border-color:rgba(255,255,255,.16)!important;
+}
+
+/* Oefenkaders behouden oranje, maar tekst leesbaar houden */
+body.dark .exercise-shell,
+body.dark .document-analysis.exercise-shell,
+body.dark .bookwidget-card.exercise-shell,
+body.dark .lesson.exercise-shell,
+body.dark-mode .exercise-shell,
+body.dark-mode .document-analysis.exercise-shell,
+body.dark-mode .bookwidget-card.exercise-shell,
+body.dark-mode .lesson.exercise-shell,
+.dark-mode .exercise-shell,
+.dark-mode .document-analysis.exercise-shell,
+.dark-mode .bookwidget-card.exercise-shell,
+.dark-mode .lesson.exercise-shell{
+  background:#3a220c!important;
+  border-color:#f97316!important;
+  color:#fff7ed!important;
+}
+
+/* Vragen binnen oefeningen */
+body.dark .nbn-mcq,
+body.dark .smartschool-mcq,
+body.dark .doc-mcq,
+body.dark .nbn-style-mcq,
+body.dark .exercise-shell .nbn-mcq,
+body.dark .exercise-shell .smartschool-mcq,
+body.dark .exercise-shell .doc-mcq,
+body.dark .exercise-shell .nbn-style-mcq,
+body.dark-mode .nbn-mcq,
+body.dark-mode .smartschool-mcq,
+body.dark-mode .doc-mcq,
+body.dark-mode .nbn-style-mcq,
+body.dark-mode .exercise-shell .nbn-mcq,
+body.dark-mode .exercise-shell .smartschool-mcq,
+body.dark-mode .exercise-shell .doc-mcq,
+body.dark-mode .exercise-shell .nbn-style-mcq,
+.dark-mode .nbn-mcq,
+.dark-mode .smartschool-mcq,
+.dark-mode .doc-mcq,
+.dark-mode .nbn-style-mcq,
+.dark-mode .exercise-shell .nbn-mcq,
+.dark-mode .exercise-shell .smartschool-mcq,
+.dark-mode .exercise-shell .doc-mcq,
+.dark-mode .exercise-shell .nbn-style-mcq{
+  background:#102f50!important;
+  color:#eaf4ff!important;
+  border-color:rgba(255,255,255,.18)!important;
+}
+
+/* Antwoordlabels */
+body.dark label,
+body.dark .nbn-style-mcq label,
+body.dark .doc-mcq label,
+body.dark .smartschool-mcq label,
+body.dark-mode label,
+body.dark-mode .nbn-style-mcq label,
+body.dark-mode .doc-mcq label,
+body.dark-mode .smartschool-mcq label,
+.dark-mode label,
+.dark-mode .nbn-style-mcq label,
+.dark-mode .doc-mcq label,
+.dark-mode .smartschool-mcq label{
+  background:#08233f!important;
+  color:#eaf4ff!important;
+  border-color:rgba(255,255,255,.20)!important;
+}
+
+/* Inputs en tekstvakken */
+body.dark input,
+body.dark textarea,
+body.dark select,
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select,
+.dark-mode input,
+.dark-mode textarea,
+.dark-mode select{
+  background:#08233f!important;
+  color:#eaf4ff!important;
+  border-color:rgba(255,255,255,.24)!important;
+}
+
+body.dark input::placeholder,
+body.dark textarea::placeholder,
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder,
+.dark-mode input::placeholder,
+.dark-mode textarea::placeholder{
+  color:#a9bfd4!important;
+}
+
+/* Navigatie/sidebar behoudt contrast */
+body.dark .sidebar,
+body.dark-mode .sidebar,
+.dark-mode .sidebar{
+  background:linear-gradient(180deg,#04172b,#06223d 55%,#041526)!important;
+}
+
+body.dark .sidebar .nav:not(.active),
+body.dark .sidebar .nav:not(.active) *,
+body.dark-mode .sidebar .nav:not(.active),
+body.dark-mode .sidebar .nav:not(.active) *,
+.dark-mode .sidebar .nav:not(.active),
+.dark-mode .sidebar .nav:not(.active) *{
+  color:#f8fbff!important;
+}
+
+body.dark .sidebar .nav.active,
+body.dark .sidebar .nav.active *,
+body.dark-mode .sidebar .nav.active,
+body.dark-mode .sidebar .nav.active *,
+.dark-mode .sidebar .nav.active,
+.dark-mode .sidebar .nav.active *{
+  color:#082d4c!important;
+}
+
+/* Topbar */
+body.dark .topbar,
+body.dark-mode .topbar,
+.dark-mode .topbar{
+  background:#061b31!important;
+  border-color:rgba(255,255,255,.14)!important;
+}
+
+/* PDF/document-afbeeldingen blijven wit voor leesbaarheid */
+body.dark .document-image-frame,
+body.dark-mode .document-image-frame,
+.dark-mode .document-image-frame{
+  background:#0e2d4d!important;
+}
+
+body.dark iframe,
+body.dark-mode iframe,
+.dark-mode iframe{
+  background:#fff!important;
+}
+
+/* Progress en badges */
+body.dark .step-module,
+body.dark .module-tile span,
+body.dark .exercise-shell::before,
+body.dark-mode .step-module,
+body.dark-mode .module-tile span,
+body.dark-mode .exercise-shell::before,
+.dark-mode .step-module,
+.dark-mode .module-tile span,
+.dark-mode .exercise-shell::before{
+  color:#082d4c!important;
+}
+
+/* Links/knoppen */
+body.dark a,
+body.dark-mode a,
+.dark-mode a{
+  color:#93c5fd!important;
+}
+
+body.dark .primary,
+body.dark-mode .primary,
+.dark-mode .primary{
+  color:#fff!important;
+}
+
+body.dark .secondary,
+body.dark-mode .secondary,
+.dark-mode .secondary{
+  background:#e8f2fb!important;
+  color:#082d4c!important;
+  border-color:#bfdbfe!important;
+}
+
+/* Tabellen */
+body.dark table,
+body.dark-mode table,
+.dark-mode table{
+  background:#0b2a4a!important;
+  color:#eaf4ff!important;
+}
+
+body.dark th,
+body.dark td,
+body.dark-mode th,
+body.dark-mode td,
+.dark-mode th,
+.dark-mode td{
+  border-color:rgba(255,255,255,.16)!important;
+}

@@ -1,12 +1,12 @@
 {
-  "release": "v11.7-nbn-cursus-hersteld",
+  "release": "v11.8-dark-mode-fix",
   "status": "OK",
   "missing": [],
   "checks": {
-    "course_pdf_copied": true,
-    "summary_replaced": true,
-    "m2_what_course_block": true,
-    "download_link": true,
-    "viewer_link": true
+    "dark_body": true,
+    "titles_fixed": true,
+    "cards_fixed": true,
+    "exercise_fixed": true,
+    "sidebar_fixed": true
   }
 }

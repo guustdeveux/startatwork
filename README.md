@@ -38,3 +38,9 @@ Aangepast:
 - De aangeleverde originele NBN-cursus is integraal toegevoegd.
 - Het document staat in Module 2, stap 2, als viewer én download.
 - De oudere samenvatting is vervangen door dit volledige document.
+
+
+## v11.8 Dark mode fix
+- Donkere modus leesbaar gemaakt voor titels, paragrafen, kaarten, oefeningen, tabellen en navigatie.
+- Oefenkaders blijven herkenbaar oranje, maar krijgen donkere tekst/achtergronden met voldoende contrast.
+- PDF- en documentpreviews blijven wit voor goede leesbaarheid.
