@@ -401,3 +401,30 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+/* V11.3 force exercise wrappers */
+document.addEventListener('DOMContentLoaded', () => {
+  ['m2-lab','m3-lab','m4-lab-new','m4-oefening'].forEach(id => {
+    const article = document.querySelector(`#${id} article`);
+    if(article) article.classList.add('exercise-shell');
+  });
+
+  document.querySelectorAll('.document-analysis, .bookwidget-card').forEach(el => {
+    el.classList.add('exercise-shell');
+  });
+
+  document.querySelectorAll('.lesson > .nbn-quiz').forEach(quiz => {
+    if(!quiz.closest('.exercise-shell')){
+      const wrapper = document.createElement('div');
+      wrapper.className = 'exercise-shell';
+      quiz.parentNode.insertBefore(wrapper, quiz);
+      wrapper.appendChild(quiz);
+      let next = wrapper.nextElementSibling;
+      while(next && (next.classList.contains('primary') || next.classList.contains('feedback'))){
+        const current = next;
+        next = next.nextElementSibling;
+        wrapper.appendChild(current);
+      }
+    }
+  });
+});

@@ -991,3 +991,206 @@ img, iframe{
     gap:3px!important;
   }
 }
+
+/* =========================================================
+   V11.3 hard fix: readable sidebar + real exercise frames
+   ========================================================= */
+
+/* Always readable sidebar text */
+.sidebar,
+.sidebar *{
+  color:#f8fbff;
+}
+
+.sidebar .nav,
+.sidebar .nav:visited,
+.sidebar .nav span,
+.sidebar summary{
+  color:#f8fbff!important;
+}
+
+.sidebar .nav.active,
+.sidebar .nav.active *,
+.sidebar .module-links .nav.active,
+.sidebar .module-links .nav.active *{
+  color:#082d4c!important;
+}
+
+.sidebar .nav.active{
+  background:#ffffff!important;
+  border:1px solid rgba(255,255,255,.45)!important;
+  box-shadow:0 10px 24px rgba(0,0,0,.22)!important;
+}
+
+.sidebar .nav.active span{
+  background:#e8f2fb!important;
+  color:#082d4c!important;
+}
+
+.sidebar .nav:not(.active):hover,
+.sidebar .nav:not(.active):hover *{
+  color:#ffffff!important;
+}
+
+/* Compact readable menu */
+.sidebar .module-links{
+  gap:4px!important;
+}
+.sidebar .module-links .nav{
+  min-height:38px!important;
+  padding:7px 9px!important;
+  line-height:1.15!important;
+}
+.sidebar .module-links .nav span{
+  width:34px!important;
+  height:30px!important;
+  color:#f8fbff!important;
+}
+
+/* Real exercise card wrapper */
+.exercise-shell,
+.document-analysis.exercise-shell,
+.bookwidget-card.exercise-shell,
+section.exercise-zone article,
+.lesson.exercise-shell{
+  background:#fff7ed!important;
+  border:2px solid #fdba74!important;
+  border-radius:28px!important;
+  padding:28px!important;
+  margin:30px 0!important;
+  box-shadow:0 16px 38px rgba(249,115,22,.12)!important;
+  position:relative!important;
+}
+
+/* One clear header for every exercise */
+.exercise-shell::before,
+.document-analysis.exercise-shell::before,
+.bookwidget-card.exercise-shell::before,
+.lesson.exercise-shell::before{
+  content:"🧩 Oefening";
+  display:flex!important;
+  align-items:center;
+  gap:10px;
+  width:fit-content;
+  margin:0 0 20px 0;
+  padding:12px 18px;
+  border-radius:999px;
+  background:#fff;
+  border:2px solid #fdba74;
+  color:#9a3412!important;
+  font-weight:1000;
+  font-size:1.18rem;
+  line-height:1;
+  box-shadow:0 8px 20px rgba(249,115,22,.12);
+}
+
+/* Remove duplicate older pseudo-labels inside the exercise */
+.exercise-shell .nbn-quiz::before,
+.exercise-shell .document-analysis::before,
+.document-analysis.exercise-shell .nbn-quiz::before,
+.bookwidget-card.exercise-shell .nbn-quiz::before{
+  content:none!important;
+  display:none!important;
+}
+
+/* Make all quiz questions visibly inside the orange exercise area */
+.exercise-shell .nbn-quiz,
+.exercise-shell .smartschool-mcq,
+.exercise-shell .nbn-mcq,
+.exercise-shell .doc-mcq,
+.exercise-shell .nbn-style-mcq,
+.document-analysis.exercise-shell .nbn-quiz{
+  background:transparent!important;
+  border:0!important;
+}
+
+.exercise-shell .nbn-mcq,
+.exercise-shell .smartschool-mcq,
+.exercise-shell .doc-mcq,
+.exercise-shell .nbn-style-mcq,
+.document-analysis.exercise-shell .doc-mcq{
+  background:#ffffff!important;
+  border:1px solid #fed7aa!important;
+  border-radius:20px!important;
+  padding:22px!important;
+  margin:14px 0!important;
+  box-shadow:0 10px 24px rgba(15,23,42,.06)!important;
+}
+
+.exercise-shell label,
+.document-analysis.exercise-shell label{
+  background:#ffffff!important;
+  border:1px solid #fed7aa!important;
+}
+
+/* iFrames clearly inside an exercise box */
+.exercise-shell iframe,
+.bookwidget-card.exercise-shell iframe,
+.oefen-card iframe,
+.oefen-fallback iframe,
+.optional-iframe{
+  width:100%!important;
+  border:2px solid #fdba74!important;
+  border-radius:18px!important;
+  background:#fff!important;
+  box-shadow:0 12px 26px rgba(15,23,42,.08)!important;
+}
+
+/* Buttons and feedback inside exercises */
+.exercise-shell .primary,
+.document-analysis.exercise-shell .primary{
+  margin-top:12px;
+}
+
+.exercise-shell .feedback,
+.document-analysis.exercise-shell .feedback{
+  background:#fff!important;
+  border:1px solid #fdba74!important;
+  border-radius:16px!important;
+  padding:12px 14px!important;
+  font-weight:950!important;
+}
+
+@media(max-width:980px){
+  .exercise-shell,
+  .document-analysis.exercise-shell,
+  .bookwidget-card.exercise-shell,
+  .lesson.exercise-shell{
+    padding:18px!important;
+    border-radius:22px!important;
+    margin:22px 0!important;
+  }
+
+  .exercise-shell::before,
+  .document-analysis.exercise-shell::before,
+  .bookwidget-card.exercise-shell::before,
+  .lesson.exercise-shell::before{
+    font-size:1rem;
+    padding:10px 14px;
+  }
+}
+
+/* v11.4 dashboard cleanup */
+.company{
+  display:none!important;
+}
+
+.dashboard-hero{
+  padding-top:38px!important;
+  padding-bottom:38px!important;
+}
+
+.dashboard-hero .hero-actions{
+  margin-top:22px;
+}
+
+.dashboard-hero .hero-actions .secondary[data-section="m4-start"]{
+  display:none!important;
+}
+
+@media(max-width:980px){
+  .dashboard-hero{
+    padding-top:24px!important;
+    padding-bottom:24px!important;
+  }
+}

@@ -1,12 +1,11 @@
 {
-  "release": "v11.2-ux-polish-oefenkaders",
+  "release": "v11.4-dashboard-cleanup",
   "status": "OK",
   "missing": [],
   "checks": {
-    "active_nav_contrast": true,
-    "exercise_shell_css": true,
-    "iframe_exercise_css": true,
-    "exercise_js": true,
-    "mobile_kept": true
+    "module4_dashboard_button_removed": true,
+    "northbridge_logo_removed": true,
+    "start_module_1": true,
+    "company_hidden_css": true
   }
 }

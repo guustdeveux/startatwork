@@ -12,3 +12,9 @@ Aangepast:
 - Alle oefeningen krijgen een herkenbaar oranje oefenkader.
 - Iframe-oefeningen staan ook in hetzelfde oefenkader.
 - Feedback en vraagkaarten visueel versterkt.
+
+
+## v11.4 Dashboard cleanup
+- Knop 'Ga naar Module 4' verwijderd van het dashboard.
+- NorthBridge-logo/company-card verwijderd uit de site.
+- Dashboard compacter gemaakt.
