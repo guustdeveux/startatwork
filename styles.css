@@ -127,3 +127,15 @@ main > .section{position:relative}
 .pdf-actions{display:flex;gap:12px;flex-wrap:wrap;margin:14px 0}
 .oefen-card iframe{width:100%;height:820px;border:0;border-radius:16px;background:white;margin-top:18px}
 @media(max-width:1100px){.pdf-document-card iframe{height:760px}.oefen-card iframe{height:620px}}
+
+/* v10.8 - document previews as rendered images + analysis questions */
+.document-image-frame{background:#eef3f8;border:1px solid var(--line);border-radius:18px;padding:18px;margin-top:16px;display:flex;justify-content:center;align-items:flex-start;overflow:visible}
+.document-image-frame img{width:min(100%, 940px);height:auto;display:block;border-radius:8px;box-shadow:0 12px 30px rgba(15,23,42,.16);background:white}
+.document-analysis{background:#f8fbfe;border:1px solid var(--line);border-radius:22px;padding:24px;margin:26px 0}
+.doc-mcq h3{margin:0 0 12px 0;color:var(--navy)}
+.doc-mcq.correct{border-color:var(--green);box-shadow:0 0 0 3px rgba(22,163,74,.12)}
+.doc-mcq.wrong{border-color:var(--red);box-shadow:0 0 0 3px rgba(220,38,38,.12)}
+.external-exercise-btn{display:inline-block;text-decoration:none;margin:12px 0}
+.oefen-fallback details{margin-top:20px;background:white;border:1px solid var(--line);border-radius:16px;padding:16px}
+.oefen-fallback summary{cursor:pointer;font-weight:950;color:var(--navy)}
+.oefen-fallback iframe{width:100%;height:760px;border:0;border-radius:16px;background:white;margin-top:16px}

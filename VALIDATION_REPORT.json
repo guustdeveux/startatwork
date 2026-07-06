@@ -1,11 +1,19 @@
 {
-  "release": "v10.7-documenten-per-onderdeel",
+  "release": "v10.8-documenten-preview-analyse",
   "status": "OK",
   "missing": [],
   "checks": {
-    "all_pdf_iframes": true,
-    "old_xray_removed_from_sections": true,
-    "oefen_iframe": true,
-    "render_verified_invoice": true
+    "analysis_buttons": true,
+    "images_present": true,
+    "external_exercise_fallback": true
+  },
+  "render_ok": {
+    "prijsaanvraag": true,
+    "offerte": true,
+    "bestelbon": true,
+    "orderbevestiging": true,
+    "leveringsbon": true,
+    "factuur": true,
+    "creditnota": true
   }
 }

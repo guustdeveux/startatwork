@@ -306,3 +306,26 @@ if(purchaseLabBtn){
     result.style.color = score === questions.length ? '#16a34a' : '#dc2626';
   });
 }
+
+/* v10.8 - document analysis questions */
+document.querySelectorAll('.check-doc-analysis').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const doc = btn.dataset.doc;
+    const container = btn.closest('.document-analysis');
+    const questions = [...container.querySelectorAll('.doc-mcq')];
+    let score = 0;
+    questions.forEach(q => {
+      q.classList.remove('correct','wrong');
+      const checked = q.querySelector('input:checked');
+      if(checked && checked.value.trim() === q.dataset.correct.trim()){
+        score++;
+        q.classList.add('correct');
+      } else {
+        q.classList.add('wrong');
+      }
+    });
+    const result = document.querySelector(`#${doc}Result`);
+    result.textContent = `Score: ${score}/${questions.length}. ${score === questions.length ? 'Prima: je hebt dit document goed geanalyseerd.' : 'Bekijk de rood gemarkeerde vragen opnieuw en vergelijk met het document.'}`;
+    result.style.color = score === questions.length ? '#16a34a' : '#dc2626';
+  });
+});
