@@ -1,7 +1,8 @@
-START@WORK v10.6 - Module 4 documenten en oefening
+START@WORK v10.7 - Documenten per onderdeel
 
-Toegevoegd:
-- externe oefening via iframe: static.oefen.be.
-- PDF-documenten voor prijsaanvraag, offerte, bestelbon, orderbevestiging, leveringsbon, factuur en creditnota.
-- documenten bevatten fictieve bedrijfsgegevens, klantgegevens, btw-nummers, betalingsgegevens en voorwaarden.
-- factuur en creditnota kregen een tweede pagina met algemene voorwaarden, gebaseerd op de structuur van de aangeleverde voorbeeldfactuur.
+Aangepast:
+- elk onderdeel van Module 4 toont nu het juiste PDF-document in een groot iframe:
+  prijsaanvraag, offerte, bestelbon, orderbevestiging, leveringsbon, factuur en creditnota.
+- de oude visuele documentkaders zijn vervangen door echte PDF-documenten.
+- factuur en creditnota bevatten geen QR-code meer.
+- oefen.be-oefening blijft beschikbaar via iframe.

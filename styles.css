@@ -120,3 +120,10 @@ main > .section{position:relative}
 .oefen-card iframe{width:100%;height:820px;border:0;border-radius:16px;background:white;margin-top:18px}
 .document-downloads{background:#f8fbfe;border:1px solid var(--line);border-radius:18px;padding:22px;margin:24px 0}
 @media(max-width:1100px){.oefen-card iframe{height:620px}}
+
+/* v10.7 PDF per onderdeel */
+.pdf-document-card{background:#f8fbfe;border:1px solid var(--line);border-radius:22px;padding:24px;margin:26px 0;box-shadow:0 12px 32px rgba(15,23,42,.06)}
+.pdf-document-card iframe{width:100%;height:980px;border:1px solid var(--line);border-radius:16px;background:white;margin-top:16px}
+.pdf-actions{display:flex;gap:12px;flex-wrap:wrap;margin:14px 0}
+.oefen-card iframe{width:100%;height:820px;border:0;border-radius:16px;background:white;margin-top:18px}
+@media(max-width:1100px){.pdf-document-card iframe{height:760px}.oefen-card iframe{height:620px}}
