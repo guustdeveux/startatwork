@@ -9,116 +9,161 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <aside class="sidebar">
+  <aside class="sidebar" id="mainSidebar">
     <div class="brand">
       <div class="brand-mark">S@W</div>
       <div><strong>START<span>@</span>WORK</strong><small>Module 1 - Professioneel werken</small></div>
     </div>
     <div class="company"><img src="assets/logos/northbridge-logo.svg" alt="NorthBridge Office Group"><p>Waar professionele groei begint.</p></div>
     <nav>
-      <button class="nav active" data-section="dashboard"><span>01</span> Start</button>
-      <button class="nav" data-section="why"><span>02</span> Waarom?</button>
-      <button class="nav" data-section="goals"><span>03</span> Wat leer je?</button>
-      <button class="nav" data-section="attitude"><span>04</span> Professionele houding</button>
-      <button class="nav" data-section="values"><span>05</span> Waarden en normen</button>
-      <button class="nav" data-section="punctuality"><span>06</span> Stiptheid</button>
-      <button class="nav" data-section="planner"><span>07</span> Planner</button>
-      <button class="nav" data-section="deadlines"><span>08</span> Deadlines</button>
-      <button class="nav" data-section="communication"><span>09</span> Communicatie</button>
-      <button class="nav" data-section="cases"><span>10</span> Casussen</button>
-      <button class="nav" data-section="reflection"><span>11</span> Reflectie</button>
-      <button class="nav" data-section="downloads"><span>12</span> Downloads</button>
-      <button class="nav" data-section="curriculum"><span>13</span> Leerplandoelen</button>
-      <button class="nav module-sep" data-section="m2-start"><span>14</span> Module 2: NBN</button>
-      <button class="nav" data-section="m2-what"><span>15</span> Wat zijn NBN-normen?</button>
-      <button class="nav" data-section="m2-why"><span>16</span> Waarom NBN?</button>
-      <button class="nav" data-section="m2-layout"><span>17</span> Documentopmaak</button>
-      <button class="nav" data-section="m2-notation"><span>18</span> Notaties</button>
-      <button class="nav" data-section="m2-examples"><span>19</span> Voorbeelden</button>
-      <button class="nav" data-section="m2-lab"><span>20</span> NBN-lab</button>
-      <button class="nav" data-section="m2-final"><span>21</span> Eindopdracht</button>
-      <button class="nav" data-section="m2-word-task"><span>22</span> Word-opdracht</button>
-      <button class="nav" data-section="m2-downloads"><span>23</span> Downloads NBN</button>
+      <button class="nav active" data-section="dashboard"><span>🏠</span> Dashboard</button>
 
-      <button class="nav module-sep" data-section="m3-start"><span>24</span> Module 3: Smartschool</button>
-      <button class="nav" data-section="m3-why"><span>25</span> Waarom Smartschool?</button>
-      <button class="nav" data-section="m3-structure"><span>26</span> Berichtstructuur</button>
-      <button class="nav" data-section="m3-attachments"><span>28</span> Bijlagen & uploadzone</button>
-      <button class="nav" data-section="m3-planner"><span>29</span> Planner</button>
-      <button class="nav" data-section="m3-lab"><span>30</span> Smartschool-lab</button>
-      <button class="nav" data-section="m3-final"><span>31</span> Eindopdracht</button>
+      <details class="module-group" open>
+        <summary><span class="module-dot m1"></span> Module 1 Professioneel werken</summary>
+        <div class="module-links">
+          <button class="nav" data-section="dashboard"><span>01</span> Start</button>
+          <button class="nav" data-section="why"><span>02</span> Waarom?</button>
+          <button class="nav" data-section="goals"><span>03</span> Wat leer je?</button>
+          <button class="nav" data-section="attitude"><span>04</span> Professionele houding</button>
+          <button class="nav" data-section="values"><span>05</span> Waarden en normen</button>
+          <button class="nav" data-section="punctuality"><span>06</span> Stiptheid</button>
+          <button class="nav" data-section="planner"><span>07</span> Planner</button>
+          <button class="nav" data-section="deadlines"><span>08</span> Deadlines</button>
+          <button class="nav" data-section="communication"><span>09</span> Communicatie</button>
+          <button class="nav" data-section="cases"><span>10</span> Casussen</button>
+          <button class="nav" data-section="reflection"><span>11</span> Reflectie</button>
+          <button class="nav" data-section="downloads"><span>12</span> Downloads</button>
+          <button class="nav" data-section="curriculum"><span>13</span> Leerplandoelen</button>
+        </div>
+      </details>
 
-      <button class="nav module-sep" data-section="m4-start"><span>33</span> Module 4: Aankoopproces</button>
-      <button class="nav" data-section="m4-why"><span>34</span> Waarom aankopen?</button>
-      <button class="nav" data-section="m4-price-request"><span>35</span> Stap 1 Prijsaanvraag</button>
-      <button class="nav" data-section="m4-offer"><span>36</span> Stap 2 Offerte</button>
-      <button class="nav" data-section="m4-order"><span>37</span> Stap 3 Bestelbon</button>
-      <button class="nav" data-section="m4-confirmation"><span>38</span> Stap 4 Orderbevestiging</button>
-      <button class="nav" data-section="m4-delivery"><span>39</span> Stap 5 Leveringsbon</button>
-      <button class="nav" data-section="m4-invoice"><span>40</span> Stap 6 Factuur</button>
-      <button class="nav" data-section="m4-creditnote"><span>41</span> Fout en creditnota</button>
-      <button class="nav" data-section="m4-flow-final"><span>42</span> Documentenstroom</button>
-      <button class="nav" data-section="m4-lab-new"><span>43</span> Aankoopproces-lab</button>
-      <button class="nav" data-section="m4-oefening"><span>44</span> Oefening aankoopproces</button>
-      <button class="nav" data-section="m4-final-new"><span>45</span> Eindopdracht</button>
+      <details class="module-group">
+        <summary><span class="module-dot m2"></span> Module 2 NBN</summary>
+        <div class="module-links">
+          <button class="nav" data-section="m2-start"><span>14</span> Start NBN</button>
+          <button class="nav" data-section="m2-what"><span>15</span> Wat zijn normen?</button>
+          <button class="nav" data-section="m2-why"><span>16</span> Waarom NBN?</button>
+          <button class="nav" data-section="m2-layout"><span>17</span> Documentopmaak</button>
+          <button class="nav" data-section="m2-notation"><span>18</span> Notaties</button>
+          <button class="nav" data-section="m2-examples"><span>19</span> Voorbeelden</button>
+          <button class="nav" data-section="m2-lab"><span>20</span> NBN-lab</button>
+          <button class="nav" data-section="m2-final"><span>21</span> Eindopdracht</button>
+          <button class="nav" data-section="m2-word-task"><span>22</span> Word-opdracht</button>
+          <button class="nav" data-section="m2-downloads"><span>23</span> Downloads NBN</button>
+        </div>
+      </details>
+
+      <details class="module-group">
+        <summary><span class="module-dot m3"></span> Module 3 Smartschool</summary>
+        <div class="module-links">
+          <button class="nav" data-section="m3-start"><span>24</span> Start Smartschool</button>
+          <button class="nav" data-section="m3-why"><span>25</span> Waarom Smartschool?</button>
+          <button class="nav" data-section="m3-structure"><span>26</span> Berichtstructuur</button>
+          <button class="nav" data-section="m3-attachments"><span>27</span> Bijlagen & uploadzone</button>
+          <button class="nav" data-section="m3-planner"><span>28</span> Planner</button>
+          <button class="nav" data-section="m3-lab"><span>29</span> Smartschool-lab</button>
+          <button class="nav" data-section="m3-final"><span>30</span> Eindopdracht</button>
+        </div>
+      </details>
+
+      <details class="module-group">
+        <summary><span class="module-dot m4"></span> Module 4 Aankoopproces</summary>
+        <div class="module-links">
+          <button class="nav" data-section="m4-start"><span>31</span> Start aankoopproces</button>
+          <button class="nav" data-section="m4-why"><span>32</span> Waarom aankopen?</button>
+          <button class="nav" data-section="m4-price-request"><span>33</span> Prijsaanvraag</button>
+          <button class="nav" data-section="m4-offer"><span>34</span> Offerte</button>
+          <button class="nav" data-section="m4-order"><span>35</span> Bestelbon</button>
+          <button class="nav" data-section="m4-confirmation"><span>36</span> Orderbevestiging</button>
+          <button class="nav" data-section="m4-delivery"><span>37</span> Leveringsbon</button>
+          <button class="nav" data-section="m4-invoice"><span>38</span> Factuur</button>
+          <button class="nav" data-section="m4-creditnote"><span>39</span> Creditnota</button>
+          <button class="nav" data-section="m4-flow-final"><span>40</span> Documentenstroom</button>
+          <button class="nav" data-section="m4-lab-new"><span>41</span> Aankoopproces-lab</button>
+          <button class="nav" data-section="m4-oefening"><span>42</span> Oefening</button>
+          <button class="nav" data-section="m4-final-new"><span>43</span> Eindopdracht</button>
+        </div>
+      </details>
+
+      <button class="nav quick-nav" data-section="downloads"><span>⬇</span> Downloads</button>
+      <button class="nav quick-nav" data-section="reflection"><span>✓</span> Voortgang</button>
     </nav>
     <div class="progress-card"><small>Voortgang module 1</small><div class="progress"><div id="progressBar"></div></div><strong id="progressText">0%</strong></div>
-  </aside>
+  </aside><div class="mobile-sidebar-overlay" id="mobileSidebarOverlay"></div>
 
   <main>
-    <header class="topbar"><div><strong>Hast Katholiek Onderwijs Hasselt</strong><span>4 Organisatie & Logistiek</span></div><button id="themeToggle">Donkere modus</button></header>
+    <header class="topbar"><button id="mobileMenuToggle" class="mobile-menu-toggle" aria-label="Menu openen">☰ Menu</button><div><strong>Hast Katholiek Onderwijs Hasselt</strong><span>4 Organisatie & Logistiek</span></div><button id="themeToggle">Donkere modus</button></header>
 
-    <section id="dashboard" class="section active">
-      <div class="hero">
+    
+    <section id="dashboard" class="section active dashboard-section">
+      <div class="dashboard-hero">
         <div>
-          <p class="eyebrow">Werkopdracht 1</p>
-          <h1>Je eerste werkdag begint met professioneel werken.</h1>
-          <p class="lead">Voor je Smartschoolberichten schrijft, e-mails verstuurt of documenten opstelt, moet je weten welke houding van jou verwacht wordt. In deze module ontdek je waarom attitude, stiptheid, Planner, deadlines en beleefde communicatie belangrijk zijn op school, op stage en later op de werkvloer.</p>
-          <div class="hero-actions"><button class="primary" data-section="why">Start module</button><a class="secondary" href="downloads/module1_professioneel_werken_samenvatting.pdf" download>Download samenvatting</a></div>
+          <p class="eyebrow">NorthBridge Office Group</p>
+          <h1>Welkom bij START@WORK.</h1>
+          <p class="lead">Je start als junior administratief medewerker. Je leert stap voor stap professioneel werken, documenten opstellen, Smartschool gebruiken en een aankoopproces opvolgen.</p>
+          <div class="hero-actions">
+            <button class="primary" data-section="why">Start mijn werkdag</button>
+            <button class="secondary" data-section="m4-start">Ga naar Module 4</button>
+          </div>
         </div>
-        <img src="assets/images/office-start.svg" alt="Illustratie eerste werkdag">
+        <aside class="manager-card">
+          <div class="manager-avatar">👩‍💼</div>
+          <div>
+            <h2>Sarah Jacobs</h2>
+            <p>Office Manager</p>
+            <blockquote>“Welkom bij NorthBridge. Vandaag leer je werken zoals een echte administratieve medewerker.”</blockquote>
+          </div>
+        </aside>
       </div>
-      <div class="overview-grid">
-        <article class="stat-card"><span>⏱</span><h3>Duur</h3><p>50-60 minuten</p></article>
-        <article class="stat-card"><span>⭐</span><h3>XP</h3><p>120 XP</p></article>
-        <article class="stat-card"><span>🎯</span><h3>Doel</h3><p>Je begrijpt wat professioneel werken betekent.</p></article>
+
+      <div class="dashboard-grid">
+        <article class="next-task-card">
+          <p class="eyebrow">Laatste opdracht</p>
+          <h2>Aankoopdossier bureaustoelen</h2>
+          <p>Analyseer prijsaanvraag, offerte, bestelbon, orderbevestiging, leveringsbon, factuur en creditnota.</p>
+          <button class="primary" data-section="m4-start">Open opdracht</button>
+        </article>
+
+        <article class="level-card">
+          <p class="eyebrow">Voortgang</p>
+          <h2>Level 1: Nieuwe medewerker</h2>
+          <p><strong>0 / 8 opdrachten voltooid</strong></p>
+          <div class="level-bar"><span style="width:0%"></span></div>
+          <small>Werk rustig module per module af.</small>
+        </article>
       </div>
-      <article class="message-card"><div class="person">SJ</div><div><h2>Sarah Jacobs - Office Manager</h2><p>Welkom bij NorthBridge Office Group. Vandaag start je als junior administratief medewerker. Voor je aan je eerste taak begint, wil ik duidelijk maken welke professionele houding wij verwachten. Kennis is belangrijk, maar collega's moeten vooral op jou kunnen rekenen.</p></div></article>
-    <article class="message-card module3-teaser">
-        <div class="person">SS</div>
-        <div>
-          <h2>Nieuwe module: Smartschool professioneel gebruiken</h2>
-          <p>Je past de NBN-afspraken nu toe in Smartschool: duidelijke onderwerpen, professionele berichten, correcte bijlagen, Planner opvolgen en uploadzones gebruiken.</p>
-          <button class="primary" data-section="m3-start">Open Module 3</button>
-        </div>
-      </article>
-      <article class="message-card module2-teaser">
-        <div class="person">NBN</div>
-        <div>
-          <h2>Volgende module: NBN-richtlijnen</h2>
-          <p>Leer hoe professionele documenten worden opgebouwd met duidelijke afspraken over marges, witregels, datums, bedragen, telefoonnummers en begroetingen.</p>
-          <button class="primary" data-section="m2-start">Open Module 2</button>
-        </div>
-      </article>
-    <article class="message-card module3-direct-card">
-        <div class="person">SS</div>
-        <div>
-          <h2>Module 3: Smartschool</h2>
-          <p>Ga rechtstreeks naar de Smartschoolmodule: berichten, Planner, uploadzone en eindopdracht.</p>
-          <button class="primary" data-section="m3-start">Open Module 3</button>
-        </div>
-      </article>
-    <article class="message-card module4-direct-card">
-        <div class="person">AP</div>
-        <div>
-          <h2>Module 4: Mijn eerste aankoopproces</h2>
-          <p>Begeleid instromers stap voor stap door prijsaanvraag, offerte, bestelbon, orderbevestiging, leveringsbon, factuur en creditnota.</p>
-          <button class="primary" data-section="m4-start">Open Module 4</button>
-        </div>
-      </article>
+
+      <h2 class="dashboard-heading">Mijn modules</h2>
+      <div class="module-dashboard-grid">
+        <article class="module-tile m1-tile">
+          <span>Module 1</span>
+          <h2>Professioneel werken</h2>
+          <p>Attitude, waarden, normen, stiptheid, Planner en deadlines.</p>
+          <button class="secondary" data-section="why">Start module</button>
+        </article>
+        <article class="module-tile m2-tile">
+          <span>Module 2</span>
+          <h2>NBN-richtlijnen</h2>
+          <p>Professionele documenten, notaties, briefopmaak en Word-opdracht.</p>
+          <button class="secondary" data-section="m2-start">Start module</button>
+        </article>
+        <article class="module-tile m3-tile">
+          <span>Module 3</span>
+          <h2>Smartschool</h2>
+          <p>Berichten, uploadzones, bijlagen, Planner en digitale etiquette.</p>
+          <button class="secondary" data-section="m3-start">Start module</button>
+        </article>
+        <article class="module-tile m4-tile">
+          <span>Module 4</span>
+          <h2>Aankoopproces</h2>
+          <p>Volg een aankoop van prijsaanvraag tot factuur en creditnota.</p>
+          <button class="secondary" data-section="m4-start">Start module</button>
+        </article>
+      </div>
     </section>
 
-    <section id="why" class="section"><article class="lesson">
+
+    <section id="why" class="section module-1-content"><article class="lesson">
       <p class="eyebrow">Waarom is dit belangrijk?</p><h1>Een goede attitude bepaalt hoe anderen jou ervaren.</h1>
       <p>Wanneer mensen spreken over een professionele houding, denken ze vaak aan beleefd zijn of op tijd komen. Dat klopt, maar professioneel werken gaat verder. Het betekent dat je verantwoordelijkheid neemt voor je eigen werk, afspraken respecteert, respectvol communiceert en begrijpt dat jouw gedrag invloed heeft op anderen.</p>
       <p>In Organisatie & Logistiek bereid je je voor op administratieve en logistieke taken. Daar hoort vakkennis bij, maar ook gedrag dat vertrouwen wekt. Een werkgever wil kunnen rekenen op medewerkers die afspraken nakomen, zelfstandig kunnen plannen en tijdig communiceren wanneer er iets fout loopt.</p>
@@ -126,12 +171,12 @@
       <div class="task-card"><h2>Denkvraag</h2><p>Waarom zou een werkgever iemand die vaak te laat komt minder snel vertrouwen, zelfs wanneer die persoon inhoudelijk goed werk levert?</p><textarea placeholder="Schrijf hier je antwoord..."></textarea></div>
     </article></section>
 
-    <section id="goals" class="section"><article class="lesson">
+    <section id="goals" class="section module-1-content"><article class="lesson">
       <p class="eyebrow">Wat ga je leren?</p><h1>Na deze module kan je professioneel gedrag herkennen en toepassen.</h1>
       <ul class="goal-list"><li><span>✓</span>Je kan uitleggen wat professioneel gedrag betekent.</li><li><span>✓</span>Je begrijpt het verschil tussen waarden en normen.</li><li><span>✓</span>Je weet waarom op tijd komen belangrijk is.</li><li><span>✓</span>Je begrijpt waarom je dagelijks je Planner controleert.</li><li><span>✓</span>Je kan uitleggen waarom deadlines bindend zijn.</li><li><span>✓</span>Je weet hoe je correct communiceert bij ziekte of problemen.</li><li><span>✓</span>Je kan professionele keuzes maken in herkenbare situaties.</li></ul>
     </article></section>
 
-    <section id="attitude" class="section"><article class="lesson">
+    <section id="attitude" class="section module-1-content"><article class="lesson">
       <p class="eyebrow">Theorie</p><h1>Wat betekent een professionele houding?</h1>
       <p>Een professionele houding betekent dat je laat zien dat je je werk ernstig neemt. Dat merk je aan kleine gewoontes: op tijd komen, je materiaal klaarleggen, beleefd spreken, je Planner gebruiken, taken tijdig indienen en hulp vragen wanneer dat nodig is.</p>
       <p>Professioneel gedrag gaat niet over perfect zijn. Iedereen maakt fouten. Het verschil zit in hoe je met fouten omgaat. Een professionele leerling of medewerker neemt verantwoordelijkheid, communiceert tijdig en zoekt naar een oplossing.</p>
@@ -139,7 +184,7 @@
       <div class="tip"><strong>Veelgemaakte fout:</strong> “Ik dacht dat ik het wel zou onthouden.” Onthouden is geen planning. Zodra je meerdere taken, deadlines en afspraken hebt, heb je een systeem nodig.</div>
     </article></section>
 
-    <section id="values" class="section"><article class="lesson">
+    <section id="values" class="section module-1-content"><article class="lesson">
       <p class="eyebrow">Waarden en normen</p><h1>Regels bestaan omdat organisaties waarden belangrijk vinden.</h1>
       <p>Een waarde is iets wat een persoon, school of bedrijf belangrijk vindt. Denk aan respect, verantwoordelijkheid, betrouwbaarheid, eerlijkheid, samenwerking en zorgvuldigheid. Waarden zijn vaak abstract: je kan ze niet zomaar afvinken.</p>
       <p>Een norm is een concrete afspraak waarmee je een waarde zichtbaar maakt. Als respect een waarde is, dan is “je laat iemand uitspreken” een norm. Als verantwoordelijkheid een waarde is, dan is “je levert taken op tijd in” een norm.</p>
@@ -147,7 +192,7 @@
       <div class="quiz"><h2>Oefening: waarde of norm?</h2><p>Klik telkens op de juiste keuze.</p><div class="quiz-item" data-answer="waarde"><strong>Respect</strong><button>Waarde</button><button>Norm</button><p></p></div><div class="quiz-item" data-answer="norm"><strong>Je komt op tijd naar de les.</strong><button>Waarde</button><button>Norm</button><p></p></div><div class="quiz-item" data-answer="waarde"><strong>Verantwoordelijkheid</strong><button>Waarde</button><button>Norm</button><p></p></div><div class="quiz-item" data-answer="norm"><strong>Je noteert deadlines in je Planner.</strong><button>Waarde</button><button>Norm</button><p></p></div></div>
     </article></section>
 
-    <section id="punctuality" class="section"><article class="lesson">
+    <section id="punctuality" class="section module-1-content"><article class="lesson">
       <p class="eyebrow">Stiptheid</p><h1>Op tijd zijn betekent klaar zijn om te starten.</h1>
       <p>Op tijd zijn betekent niet dat je op het moment van het belsignaal nog binnenwandelt. Het betekent dat je klaar bent om te starten. Je laptop staat klaar, je Planner is gecontroleerd en je weet wat je nodig hebt.</p>
       <p>Op stage of op het werk kan te laat komen grote gevolgen hebben. Een collega moet jouw taak overnemen, een klant wacht langer of een levering loopt vertraging op. Een werkgever zal dit niet eindeloos tolereren, omdat stiptheid rechtstreeks te maken heeft met betrouwbaarheid.</p>
@@ -155,7 +200,7 @@
       <div class="scenario"><h2>Scenario</h2><p>Je komt om 8.34 uur binnen. De les begon om 8.30 uur. Je laptop zit nog in je tas en je vraagt wat de opdracht is.</p><button data-feedback="Je stoort de start van de les, mist instructies en zorgt ervoor dat de leraar moet herhalen. Professioneel zou zijn: vooraf aanwezig zijn, materiaal klaarleggen en onmiddellijk starten.">Wat loopt hier fout?</button><p class="feedback"></p></div>
     </article></section>
 
-    <section id="planner" class="section"><article class="lesson">
+    <section id="planner" class="section module-1-content"><article class="lesson">
       <p class="eyebrow">Planner</p><h1>Je Planner is geen extra taak, maar je werkmiddel.</h1>
       <p>Veel leerlingen denken dat ze opdrachten wel zullen onthouden. Dat lukt misschien wanneer je maar één taak hebt. In Organisatie & Logistiek krijg je echter meerdere opdrachten, deadlines, documenten en afspraken. In het vijfde jaar komt daar stage bij, en bij jaarprojecten werk je vaak met verschillende deeldeadlines.</p>
       <p>Daarom moet je dagelijks je Planner controleren. Je leert niet alleen opdrachten onthouden, maar zelfstandig werk organiseren. Dat is precies wat later ook van jou verwacht wordt op de werkvloer.</p>
@@ -164,7 +209,7 @@
       <div class="task-card"><h2>Mini-oefening</h2><p>Je krijgt vrijdag een opdracht die woensdag klaar moet zijn. Noteer hieronder drie stappen die je in je Planner zet.</p><textarea placeholder="1. ...&#10;2. ...&#10;3. ..."></textarea></div>
     </article></section>
 
-    <section id="deadlines" class="section"><article class="lesson">
+    <section id="deadlines" class="section module-1-content"><article class="lesson">
       <p class="eyebrow">Deadlines</p><h1>Een deadline is een afspraak.</h1>
       <p>Een deadline is niet zomaar een datum. Het is een afspraak tussen jou en de persoon die jouw werk nodig heeft. Wanneer je te laat indient, kan iemand anders misschien niet verder. Daarom zijn deadlines belangrijk in projecten, administratie, logistiek en boekhouding.</p>
       <p>In het vijfde jaar krijg je grotere opdrachten en stages. Daar wordt verwacht dat je zelf opvolgt wat klaar moet zijn. Wie deadlines respecteert, toont verantwoordelijkheid en betrouwbaarheid.</p>
@@ -173,7 +218,7 @@
       <div class="tip warning"><strong>Veelgemaakte fout:</strong> wachten tot de avond voor de deadline. Als er dan technisch iets misloopt, heb je geen marge meer om hulp te vragen.</div>
     </article></section>
 
-    <section id="communication" class="section"><article class="lesson">
+    <section id="communication" class="section module-1-content"><article class="lesson">
       <p class="eyebrow">Communicatie</p><h1>Professioneel communiceren betekent tijdig, duidelijk en beleefd communiceren.</h1>
       <p>Wanneer je ziek bent of een probleem hebt, is zwijgen geen professionele keuze. Op school volgen je ouders de afspraken rond afwezigheid. Maar als jij daardoor een opdracht of deadline mist, moet je zelf leren tijdig en beleefd te communiceren via Smartschool.</p>
       <p>Een goed bericht bevat altijd context. De ontvanger moet begrijpen wat er gebeurd is, wat jij al geprobeerd hebt en welke vraag je stelt.</p>
@@ -182,25 +227,30 @@
       <div class="task-card"><h2>Oefening</h2><p>Schrijf een professioneel Smartschoolbericht waarin je meldt dat je ziek bent geweest en vraagt hoe je een gemiste opdracht kan inhalen.</p><textarea placeholder="Onderwerp: ...&#10;&#10;Geachte ..."></textarea></div>
     </article></section>
 
-    <section id="cases" class="section"><article class="lesson">
+    <section id="cases" class="section module-1-content"><article class="lesson">
       <p class="eyebrow">Casussen</p><h1>Wat zou jij doen?</h1>
       <div class="case-grid"><div class="case" data-correct="B"><h3>Casus 1: te laat</h3><p>Je weet dat je door treinvertraging te laat zal zijn op je stage.</p><button>A. Je zegt niets en komt gewoon later binnen.</button><button>B. Je verwittigt zo snel mogelijk volgens de afspraken.</button><button>C. Je stuurt pas 's avonds een bericht.</button><p class="feedback"></p></div><div class="case" data-correct="C"><h3>Casus 2: deadline</h3><p>Je merkt twee dagen voor de deadline dat je opdracht niet zal lukken.</p><button>A. Je wacht af.</button><button>B. Je dient niets in.</button><button>C. Je vraagt tijdig hulp en legt uit wat niet lukt.</button><p class="feedback"></p></div><div class="case" data-correct="A"><h3>Casus 3: Planner</h3><p>Je krijgt een grote opdracht met drie deeldeadlines.</p><button>A. Je noteert elke deeldeadline apart in je Planner.</button><button>B. Je probeert alles te onthouden.</button><button>C. Je wacht tot de leraar het opnieuw zegt.</button><p class="feedback"></p></div></div>
     </article></section>
 
-    <section id="reflection" class="section"><article class="lesson">
+    <section id="reflection" class="section module-1-content"><article class="lesson">
       <p class="eyebrow">Reflectie</p><h1>Waar wil jij professioneler in worden?</h1><p>Professioneel werken vraagt oefening. Kies één aandachtspunt voor de komende weken en maak het concreet.</p>
       <div class="reflection-grid"><label><input type="checkbox" class="progress-check"> Stiptheid</label><label><input type="checkbox" class="progress-check"> Planner controleren</label><label><input type="checkbox" class="progress-check"> Deadlines respecteren</label><label><input type="checkbox" class="progress-check"> Beleefd communiceren</label><label><input type="checkbox" class="progress-check"> Zelfstandiger werken</label><label><input type="checkbox" class="progress-check"> Samenwerken</label></div>
       <textarea placeholder="Mijn concrete actie voor deze week is..."></textarea>
     </article></section>
 
-    <section id="downloads" class="section"><article class="lesson"><p class="eyebrow">Downloads</p><h1>Downloadcentrum module 1</h1><div id="downloadGrid" class="download-grid"></div></article></section>
-    <section id="curriculum" class="section"><article class="lesson"><p class="eyebrow">Leerkrachtenmodus</p><h1>Leerplandoelkoppelingen</h1><div id="curriculumGrid" class="curriculum-grid"></div></article></section>
+    <section id="downloads" class="section module-1-content"><article class="lesson"><p class="eyebrow">Downloads</p><h1>Downloadcentrum module 1</h1><div id="downloadGrid" class="download-grid"></div></article></section>
+    <section id="curriculum" class="section module-1-content"><article class="lesson"><p class="eyebrow">Leerkrachtenmodus</p><h1>Leerplandoelkoppelingen</h1><div id="curriculumGrid" class="curriculum-grid"></div></article></section>
 
-    <section id="m2-start" class="section">
+    <section id="m2-start" class="section module-opener module-2">
       <div class="hero">
         <div>
           <p class="eyebrow">Module 2</p>
           <h1>NBN-richtlijnen voor professionele communicatie.</h1>
+      <div class="manager-note m2-note">
+        <div class="manager-avatar small">👩‍💼</div>
+        <div><strong>Sarah Jacobs</strong><p>In deze module leer je documenten opstellen volgens vaste afspraken.</p></div>
+      </div>
+
           <p class="lead">Voor je Smartschoolberichten, e-mails of zakelijke brieven opstelt, heb je een basis nodig: duidelijke afspraken over opmaak, notatie, structuur en witruimte.</p>
           <div class="hero-actions">
             <button class="primary" data-section="m2-what">Start module 2</button>
@@ -454,11 +504,16 @@
     </article></section>
 
 
-    <section id="m3-start" class="section">
+    <section id="m3-start" class="section module-opener module-3">
       <div class="hero smartschool-hero">
         <div>
           <p class="eyebrow">Module 3</p>
           <h1>Smartschool professioneel gebruiken.</h1>
+      <div class="manager-note m3-note">
+        <div class="manager-avatar small">👩‍💼</div>
+        <div><strong>Sarah Jacobs</strong><p>Vanaf nu communiceren we professioneel via Smartschool.</p></div>
+      </div>
+
           <p class="lead">Smartschool is het hoofdcommunicatiemiddel op school. Je leert berichten professioneel opstellen, de Planner opvolgen, bijlagen correct toevoegen en opdrachten indienen via de uploadzone.</p>
           <div class="hero-actions">
             <button class="primary" data-section="m3-why">Start module 3</button>
@@ -608,11 +663,16 @@
       </div>
     </article></section>
 
-    <section id="m4-start" class="section">
+    <section id="m4-start" class="section module-opener module-4">
       <div class="hero">
         <div>
           <p class="eyebrow">Module 4</p>
           <h1>Mijn eerste aankoopproces.</h1>
+      <div class="manager-note m4-note">
+        <div class="manager-avatar small">👩‍💼</div>
+        <div><strong>Sarah Jacobs</strong><p>Vandaag volg je je eerste aankoopdossier van begin tot einde.</p></div>
+      </div>
+
           <p class="lead">Je werkt als administratief medewerker bij NorthBridge Office Group. De vergaderzaal wordt vernieuwd en er moeten 12 ergonomische bureaustoelen worden aangekocht. Jij volgt elk document van begin tot einde.</p>
           <div class="hero-actions">
             <button class="primary" data-section="m4-why">Start module 4</button>
@@ -898,7 +958,7 @@
         <h2>Open de oefening</h2>
         <p>Klik op de knop. De oefening opent in een nieuw tabblad en kan daar volledig gebruikt worden.</p>
         <a class="primary external-exercise-btn" href="https://static.oefen.be/oefening/5/9/1/9/9/e/index.htm" target="_blank" rel="noopener">Start oefening in nieuw tabblad</a>
-        <details><summary>Toon iframe-poging op deze pagina</summary><iframe src="https://static.oefen.be/oefening/5/9/1/9/9/e/index.htm" title="Oefening aankoopproces" allowfullscreen></iframe></details>
+        <details><summary>Toon iframe-poging op deze pagina</summary><iframe class="optional-iframe" src="https://static.oefen.be/oefening/5/9/1/9/9/e/index.htm" title="Oefening aankoopproces" allowfullscreen></iframe></details>
       </div>
     </article></section>
 

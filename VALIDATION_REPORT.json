@@ -1,19 +1,12 @@
 {
-  "release": "v10.8-documenten-preview-analyse",
+  "release": "v11.1-mobile-ready",
   "status": "OK",
   "missing": [],
   "checks": {
-    "analysis_buttons": true,
-    "images_present": true,
-    "external_exercise_fallback": true
-  },
-  "render_ok": {
-    "prijsaanvraag": true,
-    "offerte": true,
-    "bestelbon": true,
-    "orderbevestiging": true,
-    "leveringsbon": true,
-    "factuur": true,
-    "creditnota": true
+    "mobile_button": true,
+    "overlay": true,
+    "mobile_css": true,
+    "mobile_js": true,
+    "sidebar_id": true
   }
 }
