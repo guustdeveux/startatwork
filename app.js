@@ -428,3 +428,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+/* v11.5 module2 final assignment */
+document.addEventListener('click', (e) => {
+  const btn = e.target.closest('[data-section="m2-bookwidgets"], [data-section="m2-summary"]');
+  if(btn){
+    const group = document.querySelector('.module-group [data-section="m2-bookwidgets"]')?.closest('.module-group');
+    if(group) group.open = true;
+  }
+});

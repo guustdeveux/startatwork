@@ -18,3 +18,10 @@ Aangepast:
 - Knop 'Ga naar Module 4' verwijderd van het dashboard.
 - NorthBridge-logo/company-card verwijderd uit de site.
 - Dashboard compacter gemaakt.
+
+
+## v11.5 Module 2 BookWidgets
+- Module 2 herordend: NBN Lab → Word-opdracht → Samenvatting → Eindopdracht op punten.
+- BookWidgets-taak opnieuw toegevoegd als iframe.
+- BookWidgets-taak staat in het oranje oefenkader.
+- Oude downloadsectie vervangen door duidelijke samenvattingspagina.

@@ -1,11 +1,12 @@
 {
-  "release": "v11.4-dashboard-cleanup",
+  "release": "v11.5-module2-bookwidgets",
   "status": "OK",
   "missing": [],
   "checks": {
-    "module4_dashboard_button_removed": true,
-    "northbridge_logo_removed": true,
-    "start_module_1": true,
-    "company_hidden_css": true
+    "bookwidgets_iframe": true,
+    "m2_nav_bookwidgets": true,
+    "word_after_lab_order": true,
+    "old_final_removed": true,
+    "orange_exercise": true
   }
 }
