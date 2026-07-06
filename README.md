@@ -25,3 +25,10 @@ Aangepast:
 - BookWidgets-taak opnieuw toegevoegd als iframe.
 - BookWidgets-taak staat in het oranje oefenkader.
 - Oude downloadsectie vervangen door duidelijke samenvattingspagina.
+
+
+## v11.6
+- Orderbevestiging-PDF opnieuw gegenereerd met correcte header bovenaan.
+- Previewafbeelding van de orderbevestiging opnieuw gerenderd.
+- Onderaan elke pagina staat nu een 'Vorige stap / Volgende stap'-navigatiekaart.
+- Per pagina wordt stapnummer en voortgang binnen de module getoond.

@@ -437,3 +437,24 @@ document.addEventListener('click', (e) => {
     if(group) group.open = true;
   }
 });
+
+/* v11.6 step navigation */
+document.addEventListener('click', (e) => {
+  const btn = e.target.closest('.step-nav-card button[data-section]');
+  if(!btn) return;
+  const targetId = btn.getAttribute('data-section');
+  const target = document.getElementById(targetId);
+  if(!target) return;
+
+  document.querySelectorAll('main > .section').forEach(sec => sec.classList.remove('active'));
+  target.classList.add('active');
+  document.querySelectorAll('.nav').forEach(n => n.classList.toggle('active', n.getAttribute('data-section') === targetId));
+
+  const navBtn = document.querySelector(`.module-group .nav[data-section="${targetId}"]`);
+  if(navBtn){
+    const group = navBtn.closest('.module-group');
+    if(group) group.open = true;
+  }
+
+  window.scrollTo({top:0, behavior:'smooth'});
+});
