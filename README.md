@@ -1,13 +1,7 @@
-START@WORK v10.5 - Module 4 volledig herbouwd
+START@WORK v10.6 - Module 4 documenten en oefening
 
-Module 4 is opnieuw opgebouwd als "Mijn eerste aankoopproces" voor instromers.
 Toegevoegd:
-- één doorlopende casus rond 12 ergonomische bureaustoelen;
-- duidelijke uitleg per document;
-- interactieve X-ray-documenten;
-- offertevergelijking;
-- orderbevestiging met fout;
-- leveringsbon en factuur volledig ontleed;
-- creditnota bij fout;
-- documentenstroom pas na alle documenten;
-- concrete eindopdracht.
+- externe oefening via iframe: static.oefen.be.
+- PDF-documenten voor prijsaanvraag, offerte, bestelbon, orderbevestiging, leveringsbon, factuur en creditnota.
+- documenten bevatten fictieve bedrijfsgegevens, klantgegevens, btw-nummers, betalingsgegevens en voorwaarden.
+- factuur en creditnota kregen een tweede pagina met algemene voorwaarden, gebaseerd op de structuur van de aangeleverde voorbeeldfactuur.

@@ -1,10 +1,11 @@
 {
-  "release": "v10.5-module4-reboot-aankoopproces",
+  "release": "v10.6-module4-documenten-pdf-oefening",
   "status": "OK",
   "missing": [],
   "checks": {
-    "new_m4": true,
-    "old_wordsearch_removed": true,
-    "xray": true
+    "oefen_iframe": true,
+    "pdf_cards": true,
+    "invoice_preview": true,
+    "render_verified_invoice": true
   }
 }
